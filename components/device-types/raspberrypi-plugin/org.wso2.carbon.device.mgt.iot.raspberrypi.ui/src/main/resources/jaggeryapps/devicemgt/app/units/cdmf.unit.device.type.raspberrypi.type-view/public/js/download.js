@@ -120,12 +120,11 @@ function attachEvents() {
                 $.ajax(request);
             }else if(deviceName){
                 $('.controls').append('<label for="deviceName" generated="true" class="error" ' +
-                                      'style="display: inline-block;">Please enter at least 4 ' +
-                                      'characters.</label>');
+                                      'style="display: inline-block;">请输入至少4个字符。</label>');
                 $('.control-group').removeClass('success').addClass('error');
             } else {
                 $('.controls').append('<label for="deviceName" generated="true" class="error" ' +
-                                      'style="display: inline-block;">This field is required.' +
+                                      'style="display: inline-block;">必填项。' +
                                       '</label>');
                 $('.control-group').removeClass('success').addClass('error');
             }
@@ -154,7 +153,7 @@ function downloadAgent() {
             hidePopup();
         }, 1000);
     }else {
-        $("#invalid-username-error-msg span").text("Invalid device name");
+        $("#invalid-username-error-msg span").text("设备名称无效。");
         $("#invalid-username-error-msg").removeClass("hidden");
     }
 }

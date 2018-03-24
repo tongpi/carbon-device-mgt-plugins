@@ -227,11 +227,11 @@ $(document).ready(function () {
 
                 }, function (data) {
                     if (data.status == 500) {
-                        $(errorMsg).text("Exception occurred at backend.");
+                        $(errorMsg).text("后台发生错误。");
                     } else if (data.status == 403) {
-                        $(errorMsg).text("Action was not permitted.");
+                        $(errorMsg).text("操作不允许。");
                     } else {
-                        $(errorMsg).text("An unexpected error occurred.");
+                        $(errorMsg).text("发生异常错误。");
                     }
                     $(errorMsgWrapper).removeClass("hidden");
                 }

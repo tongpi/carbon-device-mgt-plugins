@@ -15,18 +15,18 @@ specific language governing permissions and limitations
 under the License. --}}
 
 {{!-- Inputting content into defined zones in enrollment layout --}}
-{{unit "mdm.unit.ui.title" pageTitle="Page Error"}}
+{{unit "mdm.unit.ui.title" pageTitle="错误页面"}}
 {{#zone "headerTitle"}}
-    404 - Resource Not Found
+    404 - 资源未找到
 {{/zone}}
 {{#zone "content"}}
     <div class="wr-head">
-        <h3>Possible Causes :</h3>
+        <h3>可能原因 :</h3>
     </div>
-    You are seen this page since the resource you are trying to access is not available.<br/>
+    	您看到此页面，因为您尝试访问的资源不可用。<br/>
     <div class="row">
         <div class="container col-md-4 wr-buttons">
-            <a href="{{@app.context}}/enrollment" class="btn-download-agent">Goto Enroll Page</a>
+            <a href="{{@app.context}}/enrollment" class="btn-download-agent">转到登记页面</a>
         </div>
     </div>
 {{/zone}}

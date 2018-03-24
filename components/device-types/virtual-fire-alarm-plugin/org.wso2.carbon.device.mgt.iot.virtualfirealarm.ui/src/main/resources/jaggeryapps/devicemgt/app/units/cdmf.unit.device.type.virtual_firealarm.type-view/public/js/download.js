@@ -87,7 +87,7 @@ function downloadAgent() {
     });
     var deviceNameFormat = /^[^~?!#$:;%^*`+={}\[\]\\()|<>,'"]{1,30}$/;
     if (deviceName && deviceName.length < 4) {
-        $("#invalid-username-error-msg span").text("Device name should be more than 3 letters!");
+        $("#invalid-username-error-msg span").text("设备名称应该超过3个字符!");
         $("#invalid-username-error-msg").removeClass("hidden");
     } else if (deviceName && deviceNameFormat.test(deviceName)) {
         $('#downloadForm').submit();
@@ -98,7 +98,7 @@ function downloadAgent() {
             hidePopup();
         }, 1000);
     }else {
-        $("#invalid-username-error-msg span").text("Invalid device name");
+        $("#invalid-username-error-msg span").text("设备名称无效");
         $("#invalid-username-error-msg").removeClass("hidden");
     }
 }

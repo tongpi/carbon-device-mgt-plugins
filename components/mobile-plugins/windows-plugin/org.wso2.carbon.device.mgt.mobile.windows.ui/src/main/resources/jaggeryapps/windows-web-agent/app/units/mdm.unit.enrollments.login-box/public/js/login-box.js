@@ -40,19 +40,19 @@ var validate = function () {
     var password = $("input#password").val();
 
     if (!username && !password) {
-        $(errorMsg).text("Both username and password are empty. You cannot proceed.");
+        $(errorMsg).text("用户名和密码都是空的。你不能继续。");
         if ($(errorMsgWrapper).hasClass("hidden")) {
             $(errorMsgWrapper).removeClass("hidden");
         }
         return false;
     } else if (!username && password) {
-        $(errorMsg).text("Username should not be empty.");
+        $(errorMsg).text("用户名不能为空。");
         if ($(errorMsgWrapper).hasClass("hidden")) {
             $(errorMsgWrapper).removeClass("hidden");
         }
         return false;
     } else if (username && !password) {
-        $(errorMsg).text("Password should not be empty.");
+        $(errorMsg).text("密码不能为空。");
         if ($(errorMsgWrapper).hasClass("hidden")) {
             $(errorMsgWrapper).removeClass("hidden");
         }
@@ -65,16 +65,16 @@ var validate = function () {
 $(document).ready(function () {
     var error = getParameterByName("error");
     if (error == "auth-failed") {
-        var defaultMessage = "Please provide a correct username and password to continue.";
+        var defaultMessage = "请提供正确的用户名和密码以继续。";
         var customMessage = getParameterByName("message");
         if (customMessage) {
-            $(errorMsg).text("Authentication failed. " + customMessage);
+            $(errorMsg).text("认证失败。 " + customMessage);
         } else {
-            $(errorMsg).text("Authentication failed. " + defaultMessage);
+            $(errorMsg).text("认证失败。 " + defaultMessage);
         }
         $(errorMsgWrapper).removeClass("hidden");
     } else if (error == "unexpected") {
-        $(errorMsg).text("An unexpected error occured. Please try again.");
+        $(errorMsg).text("发生异常错误，请重试。");
         $(errorMsgWrapper).removeClass("hidden");
     }
 });

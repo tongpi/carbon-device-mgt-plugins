@@ -1356,10 +1356,10 @@
     </properties>
 
     <scm>
-        <url>https://github.com/wso2/carbon-device-mgt-plugins.git</url>
-        <developerConnection>scm:git:https://github.com/wso2/carbon-device-mgt-plugins.git
+        <url>https://github.com/tongpi/carbon-device-mgt-plugins.git</url>
+        <developerConnection>scm:git:https://github.com/tongpi/carbon-device-mgt-plugins.git
         </developerConnection>
-        <connection>scm:git:https://github.com/wso2/carbon-device-mgt-plugins.git</connection>
+        <connection>scm:git:https://github.com/tongpi/carbon-device-mgt-plugins.git</connection>
         <tag>HEAD</tag>
     </scm>
 
