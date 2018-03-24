@@ -328,7 +328,7 @@
                         <ul class="message message-info">
                             <i class="icon fw fw-info"></i>
                             <a id="policy-listing-status-msg"> 以下限制仅在代理人有效时有效
-                                <b>工作配置的所有者</b> or <b>设备所有者</b>.</a>
+                                <b>工作配置的所有者</b> 或 <b>设备所有者</b>.</a>
                         </ul>
                     </div>
                     <div class="wr-input-control">
@@ -440,7 +440,7 @@
                             <input id="disallow-location-sharing-enabled" type="checkbox" class="operationDataKeys"
                                    data-key="disallowLocationSharing"/>
                             <span class="helper" title="用户被限制共享地理位置。">
-                               	不允许位置共享
+                               	禁止位置共享
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                         </label>
@@ -451,7 +451,7 @@
                             <input id="disallow-uninstall-apps-enabled" type="checkbox" class="operationDataKeys"
                                    data-key="disallowUninstallApps"/>
                             <span class="helper" title="用户限制应用程序卸载。">
-                                	不允许卸载的应用程序
+                                	禁止卸载应用程序
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                         </label>
@@ -473,7 +473,7 @@
                         <ul class="message message-info">
                             <i class="icon fw fw-info"></i>
                             <a id="policy-listing-status-msg"> 以下限制只有在代理商处于有效状态时才有效
-                                <b>设备所有者</b>.</a>
+                                <b>设备所有者</b>。</a>
                         </ul>
                     </div>
                     <div class="wr-input-control">
@@ -615,8 +615,8 @@
                         <label class="wr-input-control checkbox">
                             <input id="disallow-mount-physical-media-enabled" type="checkbox" class="operationDataKeys"
                                    data-key="disallowMountPhysicalMedia"/>
-                            <span class="helper" title="用户被禁止将设备安装为物理介质。">
-                               	禁止安装物理介质
+                            <span class="helper" title="用户被禁止将设备安装为物理媒体。">
+                               	禁止安装物理媒体
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                         </label>
@@ -823,8 +823,8 @@
 
                     <div class="wr-input-control" id="control-wifi-eap" style="display:none;">
                         <label class="wr-input-label" for="wifi-eap">
-                            EAP方法
-                            <span class="helper" title="要配置的无线网络的EAP方法。">
+                            EAP模式
+                            <span class="helper" title="要配置的无线网络的EAP模式。">
                                         <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                                     </span>
                         </label>
@@ -841,7 +841,7 @@
                     </div>
                     <div class="wr-input-control" id="control-wifi-phase2" style="display:none;">
                         <label class="wr-input-label" for="wifi-phase2">
-                            	阶段2认证
+                            	阶段2 认证
                             <span class="helper"
                                   title="要配置的无线网络的阶段2认证。">
                                         <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
@@ -892,7 +892,7 @@
                                 </span>
                         </label>
                         <label id="wifiIdentityValidationText" class="wr-input-label hidden">
-                            	匿名身份应该是1到30个字符长
+                            	匿名身份长度应该是1到30个字符
                         </label>
                         <input id="wifi-anoidentity" type="text" class="form-control operationDataKeys"
                                data-key="wifiAnoIdentity"
@@ -1164,7 +1164,7 @@
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                             <br>
-                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps，com.google.android.calculator)
+                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps,com.google.android.calculator)
                         </label>
                         <textarea id="workProfilePolicyEnableSystemApps" type="text"
                                   class="form-control operationDataKeys" rows="4"
@@ -1177,7 +1177,7 @@
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                             <br>
-                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps，com.google.android.calculator)
+                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps,com.google.android.calculator)
                         </label>
                         <textarea id="work-profile-policy-hide-system-apps" class="form-control operationDataKeys"
                                   rows="4" data-key="workProfilePolicyHideSystemApps" placeholder=""></textarea>
@@ -1189,7 +1189,7 @@
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                             <br>
-                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps，com.google.android.calculator)
+                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps,com.google.android.calculator)
                         </label>
                         <textarea id="work-profile-policy-unhide-system-apps" class="form-control operationDataKeys"
                                   rows="4" data-key="workProfilePolicyUnhideSystemApps" placeholder=""></textarea>
@@ -1202,7 +1202,7 @@
                                 <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                             </span>
                             <br>
-                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps，com.google.android.calculator)
+                            ( 应该用逗号分隔确切的包名称。 例如：com.google.android.apps.maps,com.google.android.calculator)
                         </label>
                         <textarea id="work-profile-policy-install-playstore-apps" class="form-control operationDataKeys"
                                   rows="4" data-key="workProfilePolicyEnablePlaystoreApps" placeholder=""></textarea>
@@ -1418,7 +1418,7 @@
                                     <option value="630">10:30 AM</option>
                                     <option value="660">11:00 AM</option>
                                     <option value="690">11:30 AM</option>
-                                    <option value="720">12:00 noon</option>
+                                    <option value="720">12:00 中午</option>
                                     <option value="750">12:30 PM</option>
                                     <option value="780">1:00 PM</option>
                                     <option value="810">1:30 PM</option>
@@ -1478,7 +1478,7 @@
                                     <option value="630">10:30 AM</option>
                                     <option value="660">11:00 AM</option>
                                     <option value="690">11:30 AM</option>
-                                    <option value="720">12:00 noon</option>
+                                    <option value="720">12:00 中午</option>
                                     <option value="750">12:30 PM</option>
                                     <option value="780">1:00 PM</option>
                                     <option value="810">1:30 PM</option>
@@ -1618,7 +1618,7 @@
                                 <option value="540">9 AM</option>
                                 <option value="600">10 AM</option>
                                 <option value="660">11 AM</option>
-                                <option value="720">12 noon</option>
+                                <option value="720">12 中午</option>
                                 <option value="780">1 PM</option>
                                 <option value="840">2 PM</option>
                                 <option value="900">3 PM</option>
@@ -1654,7 +1654,7 @@
                                 <option value="540">9 AM</option>
                                 <option value="600">10 AM</option>
                                 <option value="660">11 AM</option>
-                                <option value="720">12 Noon</option>
+                                <option value="720">12 中午</option>
                                 <option value="780">1 PM</option>
                                 <option value="840">2 PM</option>
                                 <option value="900">3 PM</option>
@@ -1688,7 +1688,7 @@
                         </label>
                     </h2>
                     <div class="panel-title-description">
-                        	此配置可用于为Android设备设置密码策略。一旦将此配置配置文件安装在设备上，相应的用户将无法在其设备上修改这些设置。
+                        	此配置可用于设置何时在COSU设备中进行系统更新。
                     </div>
                 </div>
                 <div id="cosu-whitelisted-applications-body" class="panel-collapse panel-body collapse" role="tabpanel"

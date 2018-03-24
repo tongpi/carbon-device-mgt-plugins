@@ -108,9 +108,9 @@ function submitForm(formId) {
     } else if (httpMethod == "DELETE") {
         invokerUtil.delete(uri, successCallBack, errorCallBack, contentType);
     } else {
-        title.html("An Error Occurred!");
+        title.html("发生错误!");
         statusIcon.attr("class", defaultStatusClasses + " fw-error");
-        description.html("This operation requires http method: " + httpMethod + " which is not supported yet!");
+        description.html("该操作需要http方法: " + httpMethod + " 目前还不支持!");
         $(modalPopupContent).html(content.html());
     }
 }
