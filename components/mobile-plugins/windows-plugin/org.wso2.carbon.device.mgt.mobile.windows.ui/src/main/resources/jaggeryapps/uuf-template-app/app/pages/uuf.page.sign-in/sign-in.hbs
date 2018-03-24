@@ -22,7 +22,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h4 class="panel-title">
-                    {{#defineZone "signIn-title" scope="protected"}}Sign In to UUF Template App{{/defineZone}}
+                    {{#defineZone "signIn-title" scope="protected"}}登录到UUF模板应用程序{{/defineZone}}
                 </h4>
             </div>
             <div class="panel-body">
@@ -36,11 +36,11 @@
                       action="{{#defineZone "signInForm-action" scope="protected"}}{{@app.context}}/uuf/login{{/defineZone}}">
                     <div class="form-group">
                         <input type="text" name="username" class="form-control"
-                               placeholder="User Name" required="required" autofocus="autofocus" />
+                               placeholder="用户名" required="required" autofocus="autofocus" />
                     </div>
                     <div class="form-group">
                         <input type="password" name="password" class="form-control"
-                               placeholder="Password" required="required" />
+                               placeholder="密码" required="required" />
                     </div>
                     {{#if referer}}
                         <input type="hidden" name="referer" value="{{referer}}" />

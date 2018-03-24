@@ -25,39 +25,39 @@ under the License. --}}
             {{#excludes @unit.params.loginActionURL "windows"}}
                 <div class="wr-input-control">
                     <label class="input-label" for="domain">
-                        Domain *
+                        	域名 *
                     </label>
                     <input id="domain" name="domain" type="text" class="form-control" maxlength="30"
-                           placeholder="Enter your tenant domain here" />
+                           placeholder="在此输入你的租户域名" />
                 </div>
             {{/excludes}}
             <div class="wr-input-control">
                 <label class="input-label" for="username">
-                    Username *
+                    	用户名 *
                 </label>
                 <input id="username" name="username" type="text" class="form-control" maxlength="30"
-                       placeholder="Enter your username here" />
+                       placeholder="输入你的用户名" />
             </div>
             <br class="c-both" />
             <div class="wr-input-control">
                 <label class="input-label" for="password">
-                    Password *
+                    	密码 *
                 </label>
                 <input id="password" name="password" type="password" class="form-control" maxlength="30"
-                       placeholder="Enter your password here" />
+                       placeholder="输入你的密码" />
             </div>
             <br class="c-both" />
             <div id="ownership-content" style="visibility:hidden; position:absolute">
                 <div class="radio">
                     <label class="input-label">
                         <input type="radio" name="ownership" value="BYOD" checked>
-                        &nbsp; BYOD (This is my own device)
+                        &nbsp; BYOD (这是一个个人设备。)
                     </label>
                 </div>
                 <div class="radio">
                     <label class="input-label">
                         <input type="radio" name="ownership" value="COPE">
-                        &nbsp; COPE (This is a corporate device)
+                        &nbsp; COPE (这是一个公司设备)
                     </label>
                 </div>
             </div>
@@ -65,7 +65,7 @@ under the License. --}}
     </div>
     <div class="row">
         <div class="container col-md-4 wr-buttons">
-            <a href="#" class="btn-download-agent">Login</a>
+            <a href="#" class="btn-download-agent">登录</a>
         </div>
     </div>
 </form>

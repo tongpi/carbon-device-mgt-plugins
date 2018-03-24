@@ -92,22 +92,22 @@ var addConfiguration = function () {
                 $("#config-save-form").addClass("hidden");
                 $("#record-created-msg").removeClass("hidden");
             } else if (data == 500) {
-                $(errorMsg).text("Exception occurred at backend.");
+                $(errorMsg).text("后台发生异常错误。");
             } else if (data == 403) {
-                $(errorMsg).text("Action was not permitted.");
+                $(errorMsg).text("操做不允许。");
             } else {
-                $(errorMsg).text("An unexpected error occurred.");
+                $(errorMsg).text("发生异常错误。");
             }
 
             $(errorMsgWrapper).removeClass("hidden");
         }, function (data) {
             data = data.status;
             if (data == 500) {
-                $(errorMsg).text("Exception occurred at backend.");
+                $(errorMsg).text("后台发生异常错误。");
             } else if (data == 403) {
-                $(errorMsg).text("Action was not permitted.");
+                $(errorMsg).text("操作不允许。");
             } else {
-                $(errorMsg).text("An unexpected error occurred.");
+                $(errorMsg).text("发生异常错误。");
             }
             $(errorMsgWrapper).removeClass("hidden");
         }
@@ -124,7 +124,7 @@ var raspberryArtifactUpload = function () {
 	var statusIcon = content.find("#status-icon");
 	var data = {}
 	invokerUtil.post(urix, data, function (data) {
-		title.html("Deploying statistic artifacts. Please wait...");
+		title.html("部署统计工件。请稍后...");
 		statusIcon.attr("class", defaultStatusClasses + " fw-check");
 		$(modalPopupContent).html(content.html());
 		showPopup();
@@ -134,7 +134,7 @@ var raspberryArtifactUpload = function () {
 		}, 5000);
 
 	}, function (jqXHR) {
-		title.html("Failed to deploy artifacts, Please contact administrator.");
+		title.html("部署工件失败，请联系管理员。");
 		statusIcon.attr("class", defaultStatusClasses + " fw-error");
 		$(modalPopupContent).html(content.html());
 		showPopup();

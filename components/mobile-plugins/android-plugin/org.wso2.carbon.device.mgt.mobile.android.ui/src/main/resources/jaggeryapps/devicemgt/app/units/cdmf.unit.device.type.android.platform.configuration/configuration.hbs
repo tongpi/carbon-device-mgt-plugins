@@ -22,31 +22,31 @@
             <i class="icon fw fw-error"></i><span></span>
         </div>
         <h4>
-            Communication Protocol Configuration
+            	通信协议配置
             <hr>
         </h4>
         <div class="wr-input-control">
             <label class="wr-input-label" for="android-config-notifier">
-                Type of Communication
-                <span class="helper" title="Communication method of android agent to contact IoT Server">
+               	协议类型
+                <span class="helper" title="android代理联系IoT服务器的通信方法">
                     <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                 </span>
             </label>
             <select id="android-config-notifier" class="form-control" data-default="0">
-                <option value="1">Local Polling</option>
-                <option value="2">Firebase Cloud Messaging ( FCM )</option>
+                <option value="1">本地轮询</option>
+                <option value="2">Firebase云消息传递（FCM）</option>
             </select>
         </div>
 
         <div id="local-inputs">
             <div class="wr-input-control">
                 <label class="wr-input-label" for="android-config-notifier-frequency">
-                    Polling Interval*
-                    <span class="helper" title="Time interval after which Android agent will contact IoT Server each time to fetch data">
+                    	轮询间隔*
+                    <span class="helper" title="时间间隔后，Android代理将每次联系IoT服务器以获取数据">
                         <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                     </span>
                     <br>
-                    ( Should be in seconds )
+                    ( 应该在几秒钟内 )
                 </label>
                 <input id="android-config-notifier-frequency" type="text" class="form-control" >
             </div>
@@ -55,8 +55,8 @@
         <div id="fcm-inputs">
             <div class="wr-input-control">
                 <label class="wr-input-label" for="android-config-fcm-api-key">
-                    API Key*
-                                                <span class="helper" title="FCM API Key">
+                    API密钥*
+                                                <span class="helper" title="FCM API 密钥">
                                                     <span class="wr-help-tip glyphicon glyphicon-question-sign"></span>
                                                 </span>
                 </label>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <h4>
-            End User License Agreement ( EULA )
+            	最终用户许可协议（EULA）
             <hr>
         </h4>
 

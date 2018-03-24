@@ -104,7 +104,7 @@ $("#btn-connect-device").click(function() {
 
     $('#loading-remote-session').removeClass('hidden');
     $('#btn-connect-device').addClass('hidden');
-    $('#lbl-remote-session-status').text('Connecting to Server...');
+    $('#lbl-remote-session-status').text('连接到服务器中...');
     initializeRemoteSession();
 });
 
@@ -159,11 +159,11 @@ function initializeRemoteSession() {
         window.onbeforeunload = function() {
             rs_websocket.close();
         }
-        $('#lbl-remote-session-status').text('Waiting on device to connect...');
+        $('#lbl-remote-session-status').text('等待设备连接...');
 
     } else {
         noty({
-            text: 'Remote Session endpoint connection Failed!',
+            text: '远程会话端点连接失败！',
             type: 'error'
         });
         $('#btn-connect-device').removeClass('hidden');

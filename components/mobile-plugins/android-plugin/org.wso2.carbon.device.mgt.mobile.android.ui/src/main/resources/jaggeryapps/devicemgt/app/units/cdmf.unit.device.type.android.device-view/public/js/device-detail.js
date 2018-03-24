@@ -47,7 +47,7 @@ var InitiateViewOption = null;
             // error-callback
             function () {
                 var defaultInnerHTML =
-                    "<br><p class='fw-warning'>Device data may not have been updated. Please refresh to try again.<p>";
+                    "<br><p class='fw-warning'>设备数据可能尚未更新。 请刷新以再试一次。<p>";
                 $(".panel-body").append(defaultInnerHTML);
             }
         );
@@ -61,7 +61,7 @@ var InitiateViewOption = null;
             // error-callback
             function () {
                 var defaultInnerHTML =
-                    "<br><p class='fw-warning'>Device data may not have been updated. Please refresh to try again.<p>";
+                    "<br><p class='fw-warning'>设备数据可能尚未更新。 请刷新以再试一次。<p>";
                 $(".panel-body").append(defaultInnerHTML);
             }
         );
@@ -229,19 +229,19 @@ var InitiateViewOption = null;
                     var html;
                     switch (status) {
                         case "COMPLETED" :
-                            html = "<span><i class='fw fw-success icon-success'></i> Completed</span>";
+                            html = "<span><i class='fw fw-success icon-success'></i> 已完成</span>";
                             break;
                         case "PENDING" :
-                            html = "<span><i class='fw fw-warning icon-warning'></i> Pending</span>";
+                            html = "<span><i class='fw fw-warning icon-warning'></i> 暂停</span>";
                             break;
                         case "ERROR" :
-                            html = "<span><i class='fw fw-error icon-danger'></i> Error</span>";
+                            html = "<span><i class='fw fw-error icon-danger'></i> 出错</span>";
                             break;
                         case "IN_PROGRESS" :
-                            html = "<span><i class='fw fw-success icon-warning'></i> In Progress</span>";
+                            html = "<span><i class='fw fw-success icon-warning'></i> 进行中</span>";
                             break;
                         case "REPEATED" :
-                            html = "<span><i class='fw fw-success icon-warning'></i> Repeated</span>";
+                            html = "<span><i class='fw fw-success icon-warning'></i> 重复</span>";
                             break;
                     }
                     return html;
@@ -310,15 +310,14 @@ var InitiateViewOption = null;
                             var iconSource = $("#applications-list-container").data("public-uri") + "/img/android_app_icon.png";
                             $("#applications-list-container img").attr("src",iconSource);
                         } else {
-                            $("#applications-list-container").html("<div class='message message-info'><h4><i class='icon fw fw-info'></i>No applications found.</h4>" +
-                                "<p>Please try refreshing the list in a while.</p></div>");
+                            $("#applications-list-container").html("<div class='message message-info'><h4><i class='icon fw fw-info'></i>未发现应用程序。</h4>" +
+                                "<p>请稍后尝试刷新列表。</p></div>");
                         }
                     }
                 },
                 // error-callback
                 function () {
-                    $("#applications-list-container").html("<div class='panel-body'><br><p class='fw-warning'>&nbsp;Loading application list " +
-                        "was not successful. please try refreshing the list in a while.<p></div>");
+                    $("#applications-list-container").html("<div class='panel-body'><br><p class='fw-warning'>&nbsp;加载应用程序列表失败。 请稍后尝试刷新列表。<p></div>");
                 });
         });
     }
@@ -372,15 +371,13 @@ var InitiateViewOption = null;
                                                     $("#policy-compliance-table").addClass("hidden");
                                                 }
                                             } else {
-                                                $("#policy-list-container").html("<div class='panel-body'><br><p class='fw-warning'> This device " +
-                                                    "has no policy applied.<p></div>");
+                                                $("#policy-list-container").html("<div class='panel-body'><br><p class='fw-warning'> 该设备没有应用策略。<p></div>");
                                             }
                                         }
                                     },
                                     // error-callback
                                     function () {
-                                        $("#policy-list-container").html("<div class='panel-body'><br><p class='fw-warning'> Loading policy compliance related data " +
-                                            "was not successful. please try refreshing data in a while.<p></div>");
+                                        $("#policy-list-container").html("<div class='panel-body'><br><p class='fw-warning'> 加载策略合规性相关数据不成功。 请尽量刷新数据。<p></div>");
                                     }
                                 );
                             }
@@ -388,8 +385,7 @@ var InitiateViewOption = null;
                     },
                     // error-callback
                     function () {
-                        $("#policy-list-container").html("<div class='panel-body'><br><p class='fw-warning'> Loading policy compliance related data " +
-                            "was not successful. please try refreshing data in a while.<p></div>");
+                        $("#policy-list-container").html("<div class='panel-body'><br><p class='fw-warning'>加载策略合规性相关数据不成功。 请尽量刷新数据。<p></div>");
                     }
                 );
             }

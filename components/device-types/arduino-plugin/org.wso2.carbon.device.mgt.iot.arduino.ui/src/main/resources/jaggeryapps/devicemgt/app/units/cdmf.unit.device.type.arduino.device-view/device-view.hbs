@@ -39,11 +39,10 @@
 
 {{#zone "device-view-tabs"}}
     <li class="active"><a class="list-group-item" href="#device_statistics" role="tab"
-                          data-toggle="tab" aria-controls="device_statistics">Device
-        Statistics</a>
+                          data-toggle="tab" aria-controls="device_statistics">设备统计</a>
     </li>
     <li><a class="list-group-item" href="#event_log" role="tab" data-toggle="tab"
-           aria-controls="event_log">Operations Log</a></li>
+           aria-controls="event_log">操作日志</a></li>
     <li><a class="list-group-item" href="#geo_dashboard" role="tab" data-toggle="tab"
            aria-controls="geo_dashboard">Map</a></li>
 {{/zone}}
@@ -51,7 +50,7 @@
 {{#zone "device-view-tab-contents"}}
     <div class="panel panel-default tab-pane active"
          id="device_statistics" role="tabpanel" aria-labelledby="device_statistics">
-        <div class="panel-heading">Device Statistics</div>
+        <div class="panel-heading">设备统计</div>
         {{unit "cdmf.unit.device.type.arduino.realtime.analytics-view" device=device}}
     </div>
     <div class="panel panel-default tab-pane" id="event_log" role="tabpanel"
@@ -65,13 +64,13 @@
 
                 <i class="fw fw-settings fw-spin fw-2x"></i>
 
-                Loading Operations Log . . .
+                	加载操作日志中 . . .
                 <br>
                 <br>
             </div>
             <div id="operations-log-container">
                 <div class="panel-body">
-                    Not available yet
+                    	暂无
                 </div>
                 <br class="c-both"/>
             </div>
@@ -90,7 +89,7 @@
             <span class="fw-stack">
                 <i class="fw fw-circle-outline fw-stack-2x"></i>
                 <i class="fw fw-statistics fw-stack-1x"></i>
-            </span> View Device Location
+            </span> 查看设备位置
         </a>
     </div>
 {{/zone}}

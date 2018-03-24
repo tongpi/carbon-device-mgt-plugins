@@ -16,49 +16,47 @@
   under the License.
 }}
 <div class="col-lg-12  margin-top-double">
-    <h1 class="grey ">Virtual Firealarm</h1>
+    <h1 class="grey ">虚拟火灾报警</h1>
     <hr>
 </div>
 <div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 padding-top">
     <img src="{{@unit.publicUri}}/images/firealarm-icon.png" class="img-responsive">
 </div>
 <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 padding-top">
-    <h3 class="uppercase">What it Does</h3>
+    <h3 class="uppercase">它是做什么的</h3>
     <hr>
-    <p class="grey margin-top">A Virtual Device that mimics the functionality of a real Firealarm.
-                               Once run, the Virtual Firealarm connects to WSO2 IoT Server and pushes the Temperature readings.</p>
-    <p>The device supports MQTT and XMPP Communications. It is configured to use MQTT by
-       default.</p>
+    <p class="grey margin-top">一个虚拟设备，模拟真实的火灾报警的功能。一旦运行，虚拟报警装置连接到物联网服务器和WSO2推动温度读数。</p>
+    <p>该器件支持MQTT和XMPP通信。 它被配置为默认使用MQTT。</p>
     <br>
-    <h3 class="uppercase">What You Need</h3>
+    <h3 class="uppercase">你需要什么</h3>
     <hr>
     <ul class="list-unstyled">
         <li class="padding-top-double">
-            <span class="badge">STEP 01</span>
-               Go ahead and click Download Agent to download the agent.
+            <span class="badge">步骤 01</span>
+              	继续并点击下载代理下载。
         </li>
         <li>
-            <span class="badge">STEP 02</span>
-               Follow the steps under <a href="#prepare">[Prepare]</a> section.
+            <span class="badge">步骤 02</span>
+               	按照<a href="#prepare"> [准备] </a>一节中的步骤操作。
         </li>
         <li>
-            <span class="badge">STEP 03</span>
-               Read the [Try Out] section to experiment with the device.
+            <span class="badge">步骤 03</span>
+               	阅读[试用]部分以尝试使用该设备。
         </li>
     </ul>
     <br>
     <a href="/api-store/apis/info?name={{@uriParams.deviceType}}&version=1.0.0&provider=admin"
        class="btn-operations"
-       target="_blank"><i class="fw fw-api"></i> View API</i>
+       target="_blank"><i class="fw fw-api"></i> 查看 API</i>
     </a>
     <a href="#" class="download-link btn-operations">
-        <i class="fw fw-download"></i>Download Agent</a>
+        <i class="fw fw-download"></i>下载代理</a>
     {{#if displayStatus}}
-        <a href="javascript:artifactUpload()" class="btn-operations"><i class="fw fw-upload fw-inverse fw-lg add-margin-1x"></i> Deploy Analytics Artifacts</a>
+        <a href="javascript:artifactUpload()" class="btn-operations"><i class="fw fw-upload fw-inverse fw-lg add-margin-1x"></i> 部署分析部件</a>
     {{/if}}
 
-    <p class="doc-link">Click <a href="https://docs.wso2.com/display/IoTS320/Enterprise+IoT+solution"
-                                  target="_blank">[ here ]</a> for the latest instructions and troubleshooting tips.
+    <p class="doc-link">点击 <a href="https://docs.wso2.com/display/IoTS320/Enterprise+IoT+solution"
+                                  target="_blank">[ 这 ]</a> 了解最新的说明和故障排除提示。
     </p>
     <div id="download-device-modal-content" class="hide">
         <div class="modal-header">
@@ -71,7 +69,7 @@
                       <i class="fw fw-add fw-stack-1x fw-inverse"></i>
                    </span>
                 </span>
-                  Add your new firealarm device to {{@app.conf.appName}}
+                  	将您的新火灾报警设备添加到{{@ app.conf.appName}}
             </h4>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fw fw-cancel"></i>
             </button>
@@ -79,7 +77,7 @@
         <hr>
         <div class="modal-body add-margin-top-2x add-margin-bottom-2x">
             <div class="panel-body col-centered text-center">
-                <h3>Name your device and download the agent.</h3>
+                <h3>命名您的设备并下载代理。</h3>
                 <br />
                 <form id="downloadForm" method="GET"
                       action="{{@app.context}}/api/devices/sketch/download">
@@ -105,8 +103,8 @@
         </div>
         <div class="modal-footer">
             <div class="buttons" style="padding-bottom: 0px">
-                <a class="btn btn-operations" onclick="downloadAgent()">Download Now</a>
-                <a href="javascript:hidePopup()" class="btn-operations btn-default">Cancel</a>
+                <a class="btn btn-operations" onclick="downloadAgent()">现在下载</a>
+                <a href="javascript:hidePopup()" class="btn-operations btn-default">取消</a>
             </div>
         </div>
     </div>
@@ -114,7 +112,7 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Device Agent will downloading shortly.</h3>
+                    <h3>设备代理将很快下载。</h3>
                 </div>
             </div>
         </div>
@@ -123,10 +121,10 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Exception at backend. Try Later.</h3>
+                    <h3>后台异常，请稍后重试。</h3>
                     <div class="buttons">
                         <a href="#" id="device-400-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -137,14 +135,14 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>You have to log in first.</h3><br />
+                    <h3>你必须先登录。</h3><br />
 
                     <div class="buttons">
                         <a href="#" id="device-401-link" class="blue-button">
-                            Goto Login Page
+                            	转到登录页面
                         </a>
                         <a href="#" onclick="hidePopup();" class="btn-operations">
-                            Cancel
+                            	取消
                         </a>
                     </div>
                 </div>
@@ -155,10 +153,10 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Action not permitted.</h3><br />
+                    <h3>操作不允许。</h3><br />
                     <div class="buttons">
                         <a href="#" id="device-403-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -169,11 +167,11 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Device Sketch does not exist.</h3><br />
+                    <h3>设备程序不存在。</h3><br />
 
                     <div class="buttons">
                         <a href="#" id="device-409-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -184,11 +182,11 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Unexpected error.</h3><br />
+                    <h3>异常错误。</h3><br />
 
                     <div class="buttons">
                         <a href="#" id="device-unexpected-error-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -198,20 +196,20 @@
     <br /><br />
 </div>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-double grey-bg">
-    <h3 class="uppercase">Prepare</h3>
+    <h3 class="uppercase">准备</h3>
     <hr>
     <ul class="list-unstyled">
         <li class="padding-top-double">
             <span class="badge">01</span>
-               Unzip the downloaded Agent.
+              	解压下载的代理。
         </li>
         <li class="padding-top-double">
             <span class="badge">02</span>
-               Navigate to the unzipped Agent folder via the terminal.
+               	通过终端导航到解压缩的代理文件夹。
         </li>
         <li class="padding-top-double">
             <span class="badge">03</span>
-               Run this command: <span style="font-family: monospace;">sh start-device.sh</span>.
+               	运行命令: <span style="font-family: monospace;">sh start-device.sh</span>.
         </li>
     </ul>
     <br>
@@ -219,7 +217,7 @@
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padding-double">
     <h3 class="uppercase">The Virtual-Fire-Alarm Device</h3>
     <hr>
-    <p class="grey margin-top">Click on the image to zoom.</p>
+    <p class="grey margin-top">点击图片放大。</p>
     <center>
         <a href="{{@unit.publicUri}}/images/schematicsGuide.png" target="_blank">
             <img src="{{@unit.publicUri}}/images/schematicsGuide.png" class="img-responsive">
@@ -228,25 +226,24 @@
     <br />
 </div>
 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 padding-double">
-    <h3 class="uppercase">Try Out</h3>
+    <h3 class="uppercase">尝试</h3>
     <hr>
     <ul class="list-unstyled">
         <li class="padding-top-double">
             <span class="badge">01</span>
-               View all the connected devices in the
-            <a href="{{@app.context}}/devices">[Device Management]</a> page.
+               	在<a href="{{@app.context}}/devices"> [设备管理] </a>页面查看所有连接的设备。
         </li>
         <li class="padding-top-double">
             <span class="badge">02</span>
-               Try out the operations on your devices and monitor real-time data.
+               	试用设备上的操作并监控实时数据。
         </li>
         <li class="padding-top-double">
             <span class="badge">03</span>
-               Navigate to the device's analytics data page and view the data published by the device.
+               	导航到设备的分析数据页面并查看设备发布的数据。
         </li>
     </ul>
     <br />
-    <p class="grey margin-top">Click on the image to zoom.</p>
+    <p class="grey margin-top">点击图片放大。</p>
     <center>
         <a href="{{@unit.publicUri}}/images/myDevices_analytics.png" target="_blank">
             <img src="{{@unit.publicUri}}/images/myDevices_analytics.png" class="img-responsive">
