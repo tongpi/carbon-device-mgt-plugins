@@ -203,7 +203,7 @@ var validatePolicyProfile = function () {
                 if (!$("#wifi-password").val()) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "无线安全类型需要密码 " + wifiType + "。 " +
+                        "subErrorMsg": "无线安全类型" + wifiType + "需要密码 。 " +
                         "请提供密码以继续。",
                         "erroneousFeature": operation
                     };
