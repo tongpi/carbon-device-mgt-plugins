@@ -60,12 +60,12 @@ function changeLabels() {
     var infoTxt = document.getElementById('defaultFileLocation');
     console.log("info text " + infoTxt.value);
     jQuery(upload).change(function () {
-        document.getElementById('fileURL').placeholder = "文件 URL";
+        document.getElementById('fileURL').placeholder = "文件网址";
         document.getElementById('fileLocation').placeholder = "在设备中保存文件的位置";
         $(infoTxt).show();
     });
     jQuery(download).change(function () {
-        document.getElementById('fileURL').placeholder = "从设备上传文件的URL";
+        document.getElementById('fileURL').placeholder = "从设备上传文件的网址";
         document.getElementById('fileLocation').placeholder = "设备中的文件位置";
         $(infoTxt).hide();
     });
@@ -279,7 +279,7 @@ function validateFileTransferParameters(payload) {
     var auth = document.getElementById('authentication');
     var protocol = $(document.getElementById('protocol')).find("option:selected").text();
     if (payload.upload && !payload.fileURL) {
-        returnVal = "请输入文件 网址";
+        returnVal = "请输入文件网址";
     } else if (!payload.upload && !payload.fileURL) {
         returnVal = "请输入要从设备上上传文件的网址";
     } else if (protocol === "HTTP" && !(payload.fileURL).startsWith("http:")) {

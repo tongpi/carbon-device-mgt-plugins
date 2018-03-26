@@ -41,7 +41,7 @@ $(window).load(function () {
         series: [{
             'color': palette.color(),
             'data': chartData,
-            'name': "Temperature"
+            'name': "温度"
         }]
     });
 
