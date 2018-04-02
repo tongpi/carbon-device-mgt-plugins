@@ -19,12 +19,7 @@
     </div>-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 add-padding-top-2x add-padding-bottom-2x">
         {{#if isVirtual}}
-            <h3 class="text-center add-padding-bottom-4x">下载我们的虚拟Android设备，登记它在WSO2
-                {{#if isCloud}}
-                   	 设备云服务器
-                {{else}}
-                   	物联网服务器
-                {{/if}}，试试看!</h3>
+            <h3 class="text-center add-padding-bottom-4x">下载我们的虚拟Android设备，登记它，试试看！</h3>
             <div class="text-center"><a
                     href="{{@unit.publicUri}}/assets/android-tryit.ZIP"
                     class="btn-operations remove-margin download_agent">
@@ -52,22 +47,22 @@
         {{/if}}
     </div>
     {{#if isCloud}}
-        <p class="doc-link text-center">需要帮助？阅读 <a
+        <!--<p class="doc-link text-center">需要帮助？阅读 <a
             {{#if isVirtual}}
             href="https://docs.wso2.com/display/DeviceCloud/Quick+Start+Guide"
             {{else}}
             href="https://docs.wso2.com/display/DeviceCloud/Enrolling+an+Android+Device"
             {{/if}}
             target="_blank">WSO2 设备云服务器文档 。</a>
-        </p>
+        </p>-->
     {{else}}
-        <p class="doc-link text-center">需要帮助？阅读 <a
+        <!--<p class="doc-link text-center">需要帮助？阅读 <a
             {{#if isVirtual}}
                 href="https://docs.wso2.com/display/IoTS320/Android+Virtual+Device"
             {{else}}
                 href="https://docs.wso2.com/display/IoTS320/Android"
             {{/if}}
-             target="_blank">WSO2 物联网服务器文档。</a></p>
+             target="_blank">WSO2 物联网服务器文档。</a></p>-->
     {{/if}}
 </div>
 
