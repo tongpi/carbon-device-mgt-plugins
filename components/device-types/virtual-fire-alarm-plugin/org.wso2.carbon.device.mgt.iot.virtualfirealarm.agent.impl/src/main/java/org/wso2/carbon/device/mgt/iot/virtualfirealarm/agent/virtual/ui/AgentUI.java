@@ -184,7 +184,7 @@ public class AgentUI extends JFrame {
         jLabel1 = new JLabel();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Fire Alarm Emulator");
+        setTitle("火灾报警模拟器");
         setResizable(false);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation(dim.width / 2 - 650 / 2, dim.height / 2 - 440 / 2);
