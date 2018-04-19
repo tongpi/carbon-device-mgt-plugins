@@ -65,7 +65,7 @@
                     <div class="row">
                         <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
                             <span id="filterMsg" class="add-padding-left-2x">
-                                Click on any available device group <br>to filter more on devices.
+                                点击任何可用的设备组<br>以过滤更多设备。
                             </span>
                             <div id="breadcrumbs" class="add-padding-left-2x"></div>
                         </div>

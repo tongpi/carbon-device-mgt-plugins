@@ -33,7 +33,7 @@
         <html>
             <head>
                 <meta charset="utf-8">
-                <title>Filter Groups</title>
+                <title>过滤组</title>
 
                 <!-- Theme -->
                 <link rel="stylesheet" type="text/css" href="/portal/libs/bootstrap_3.3.5/css/bootstrap.min.css" />
@@ -73,12 +73,12 @@
                     <div id="header-msg">
                         <i class="icon fw fw-info text-info" style="margin-bottom: 3px;"></i>
                         &nbsp;
-                        <span id="header-msg-text">Found no devices in the system.<span>
+                        <span id="header-msg-text">在系统中找不到任何设备。<span>
                         <hr>
                     </div>
                 </h4>
                 <span id="body-msg-for-zero-devices" class="add-padding-left-5x add-padding-right-5x hidden">
-                    Enroll at least one device to see device grouping statistics in action.
+                    至少注册一个设备以查看设备分组统计信息。
                 <span>
             </body>
         </html>
