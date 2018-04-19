@@ -33,7 +33,7 @@
         <html>
             <head>
                 <meta charset="utf-8">
-                <title>Connectivity Status</title>
+                <title>连接状态</title>
 
                 <!-- Theme -->
                 <link rel="stylesheet" type="text/css" href="/portal/libs/bootstrap_3.3.5/css/bootstrap.min.css" />
@@ -68,7 +68,7 @@
                 <h4 class="add-padding-left-5x add-padding-top-3x add-padding-right-5x">
                     <div id="header-msg">
                         <span id="header-msg-count" class="label label-success label-zero">0</span>
-                        &nbsp; <span id="header-msg-text">non-compliant features found.<span>
+                        &nbsp; <span id="header-msg-text">发现不合规的功能。<span>
                     </div>
                     <hr>
                 </h4>
@@ -77,14 +77,14 @@
                     <div class="form-inline">
                         <div class="form-group clearfix">
                             <div class="pull-left">
-                                <label for="input-name" class="control-label">Show&nbsp;</label>
+                                <label for="input-name" class="control-label">展示&nbsp;</label>
                                 <select id="paginationNumber" class="form-control" onChange="bc.changePaginationNumber(this.value);">
                                     <option value=5>5</option>
                                     <option value=10>10</option>
                                     <option value=15>15</option>
                                     <option value=20>20</option>
                                 </select>
-                                &nbsp;features
+                                &nbsp;功能
                             </div>
                             <div class="pull-right">
                                 <div id="idPaginate"></div>
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <span id="body-msg-for-compliance" class="add-padding-left-5x add-padding-right-5x hidden">
-                    All devices (if any) with assigned policies are currently intact.
+                    所有分配了策略的设备（如果有的话）都是完好的。
                 <span>
             </body>
         </html>
