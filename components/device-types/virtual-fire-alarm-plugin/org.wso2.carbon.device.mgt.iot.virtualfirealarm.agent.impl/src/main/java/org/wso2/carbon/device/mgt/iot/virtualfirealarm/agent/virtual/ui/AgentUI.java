@@ -196,7 +196,7 @@ public class AgentUI extends JFrame {
         Calendar now = Calendar.getInstance();
         int currentYear = now.get(Calendar.YEAR);
         jLabel2.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel2.setText("Copyright (c) " + currentYear + ", WSO2 Inc.");
+        jLabel2.setText("西安长城数字软件有限公司&copy; " + currentYear + " 版权所有");
 
         jPanel1.setBackground(new Color(220, 220, 220));
 
