@@ -196,7 +196,7 @@ public class AgentUI extends JFrame {
         Calendar now = Calendar.getInstance();
         int currentYear = now.get(Calendar.YEAR);
         jLabel2.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel2.setText("西安长城数字软件有限公司&copy; " + currentYear + " 版权所有");
+        jLabel2.setText("西安长城数字软件有限公司");
 
         jPanel1.setBackground(new Color(220, 220, 220));
 
@@ -386,7 +386,7 @@ public class AgentUI extends JFrame {
         jLabel20.setVerticalTextPosition(SwingConstants.TOP);
 
         lblStatus.setFont(new Font("Cantarell", 1, 15)); // NOI18N
-        lblStatus.setText("Not Connected");
+        lblStatus.setText("未连接");
 
         GroupLayout jPanel6Layout = new GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
