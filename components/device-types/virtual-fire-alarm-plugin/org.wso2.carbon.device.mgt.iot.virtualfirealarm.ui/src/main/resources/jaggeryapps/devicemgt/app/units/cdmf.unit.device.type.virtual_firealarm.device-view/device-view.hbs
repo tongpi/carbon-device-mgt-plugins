@@ -35,14 +35,14 @@
     data-owner="{{device.owner}}">
     {{device.enrolmentInfo.owner}}'s {{device.name}}
     </h1>
-    <h4>Ownership - <strong>{{device.enrolmentInfo.ownership}}</strong></h4>
-    <h4>Device is
+    <h4>所有权 - <strong>{{device.enrolmentInfo.ownership}}</strong></h4>
+    <h4>设备是 
       <strong>
-        {{#equal device.enrolmentInfo.status "ACTIVE"}}Active{{/equal}}
-        {{#equal device.enrolmentInfo.status "INACTIVE"}}Inactive{{/equal}}
-        {{#equal device.enrolmentInfo.status "BLOCKED"}}Blocked{{/equal}}
-        {{#equal device.enrolmentInfo.status "REMOVED"}}Removed{{/equal}}
-        {{#equal device.enrolmentInfo.status "UNREACHABLE"}}Unreachable{{/equal}}
+        {{#equal device.enrolmentInfo.status "ACTIVE"}}激活的{{/equal}}
+        {{#equal device.enrolmentInfo.status "INACTIVE"}}闲置的{{/equal}}
+        {{#equal device.enrolmentInfo.status "BLOCKED"}}阻塞的{{/equal}}
+        {{#equal device.enrolmentInfo.status "REMOVED"}}已移除{{/equal}}
+        {{#equal device.enrolmentInfo.status "UNREACHABLE"}}无法找到{{/equal}}
       </strong>
     </h4>
 {{/zone}}
@@ -50,7 +50,7 @@
 {{#zone "device-opetations"}}
     <div class="operation-container">
       <div class="operation-title">
-          <h4>Device Operations</h4>
+          <h4>设备操作</h4>
       </div>
       {{unit "cdmf.unit.device.operation-bar" device=device autoCompleteParams=autoCompleteParams
       encodedFeaturePayloads=encodedFeaturePayloads}}
@@ -59,8 +59,7 @@
 
 {{#zone "device-view-tabs"}}
     <li class="active"><a class="list-group-item" href="#device_statistics" role="tab"
-                          data-toggle="tab" aria-controls="device_statistics">Device
-                                                                              Statistics</a>
+                          data-toggle="tab" aria-controls="device_statistics">设备统计</a>
     </li>
 {{/zone}}
 
@@ -68,26 +67,26 @@
 
     <div class="panel panel-default tab-pane active"
          id="device_statistics" role="tabpanel" aria-labelledby="device_statistics">
-        <div class="panel-heading">Device Statistics</div>
+        <div class="panel-heading">设备统计</div>
         {{unit "cdmf.unit.device.type.virtual_firealarm.realtime.analytics-view" device=device}}
     </div>
 
     <div class="panel panel-default tab-pane" id="policies" role="tabpanel"
          aria-labelledby="policies">
-        <div class="panel-heading">Policies</div>
+        <div class="panel-heading">策略</div>
         <div class="panel-body">
             <div id="policy-spinner" class="wr-advance-operations-init hidden">
                 <br>
 
                 <i class="fw fw-settings fw-spin fw-2x"></i>
 
-                Loading Policies . . .
+                	加载策略中 . . .
                 <br>
                 <br>
             </div>
             <div id="policy-list-container">
                 <div class="panel-body">
-                    No policies found
+                    	没有发现策略
                 </div>
                 <br class="c-both"/>
             </div>
@@ -97,11 +96,11 @@
                                         <span class="fw-stack">
                                             <i class="fw fw-circle-outline fw-stack-2x"></i>
                                             <i class="fw fw-policy fw-stack-1x"></i>
-                                        </span> Add device specific policy</a>
+                                        </span> 添加设备特定策略</a>
     </div>
     <div class="panel panel-default tab-pane" id="event_log" role="tabpanel"
          aria-labelledby="event_log">
-        <div class="panel-heading">Operations Log <span><a href="#"
+        <div class="panel-heading">操作日志 <span><a href="#"
                                                            id="refresh-operations"><i
                 class="fw fw-refresh"></i></a></span></div>
         <div class="panel-body">
@@ -110,13 +109,13 @@
 
                 <i class="fw fw-settings fw-spin fw-2x"></i>
 
-                Loading Operations Log . . .
+                	加载操作日志中 . . .
                 <br>
                 <br>
             </div>
             <div id="operations-log-container">
                 <div class="panel-body">
-                    Not available yet
+                    	暂无
                 </div>
                 <br class="c-both"/>
             </div>

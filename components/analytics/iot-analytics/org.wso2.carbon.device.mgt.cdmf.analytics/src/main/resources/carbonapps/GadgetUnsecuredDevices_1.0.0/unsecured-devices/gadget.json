@@ -1,6 +1,6 @@
 {
   "id": "unsecured-devices",
-  "title": "Unsecured Devices",
+  "title": "不安全的设备",
   "type": "gadget",
   "thumbnail": "gadget/unsecured-devices/img/thumbnail.png",
   "data": {
@@ -9,13 +9,13 @@
   "notify": {
     "publisher": {
       "type": "filter",
-      "description": "This notifies selected filter"
+      "description": "这通知选定的过滤器"
     }
   },
   "listen": {
     "subscriber": {
       "type": "filter",
-      "description": "Used to listen to any filters"
+      "description": "用于监听任何过滤器"
     }
   }
 }

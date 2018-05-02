@@ -76,7 +76,7 @@ function submitForm(formId) {
         } catch (err) {
             //do nothing
         }
-        title.html("Operation Triggered!");
+        title.html("触发操作！");
         statusIcon.attr("class", defaultStatusClasses + " fw-check");
         description.html(res);
         console.log("success!");
@@ -84,7 +84,7 @@ function submitForm(formId) {
     };
     var errorCallBack = function (response) {
         console.log(response);
-        title.html("An Error Occurred!");
+        title.html("发生错误!");
         statusIcon.attr("class", defaultStatusClasses + " fw-error");
         var reason = (response.responseText == "null")?response.statusText:response.responseText;
         try {
@@ -108,9 +108,9 @@ function submitForm(formId) {
     } else if (httpMethod == "DELETE") {
         invokerUtil.delete(uri, successCallBack, errorCallBack, contentType);
     } else {
-        title.html("An Error Occurred!");
+        title.html("发生错误!");
         statusIcon.attr("class", defaultStatusClasses + " fw-error");
-        description.html("This operation requires http method: " + httpMethod + " which is not supported yet!");
+        description.html("该操作需要http方法: " + httpMethod + " 目前还不支持!");
         $(modalPopupContent).html(content.html());
     }
 }

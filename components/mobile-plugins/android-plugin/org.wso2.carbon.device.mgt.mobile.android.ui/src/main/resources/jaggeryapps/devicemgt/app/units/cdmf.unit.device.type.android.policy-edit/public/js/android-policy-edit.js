@@ -146,7 +146,7 @@ var validatePolicyProfile = function () {
         // updating validationStatus
         validationStatus = {
             "error": true,
-            "mainErrorMsg": "You cannot continue. Zero configured features."
+            "mainErrorMsg": "你不能继续。 零配置功能。"
         };
         // updating validationStatusArray with validationStatus
         validationStatusArray.push(validationStatus);
@@ -165,14 +165,14 @@ var validatePolicyProfile = function () {
                 if (!$.isNumeric(passcodePolicyMaxPasscodeAgeInDays)) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Provided passcode age is not a number.",
+                        "subErrorMsg": "提供的密码有效期不是一个数字。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
                 } else if (!inputIsValidAgainstRange(passcodePolicyMaxPasscodeAgeInDays, 1, 730)) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Provided passcode age is not with in the range of 1-to-730.",
+                        "subErrorMsg": "提供的密码有效期不在1至730的范围内。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
@@ -186,14 +186,14 @@ var validatePolicyProfile = function () {
                     if (!$.isNumeric(passcodePolicyPasscodeHistory)) {
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "Provided passcode history is not a number.",
+                            "subErrorMsg": "提供的历史密码不是数字。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;
                     } else if (!inputIsValidAgainstRange(passcodePolicyPasscodeHistory, 1, 50)) {
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "Provided passcode history is not with in the range of 1-to-50.",
+                            "subErrorMsg": "提供的历史密码记录不在1到50的范围内。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;
@@ -269,7 +269,7 @@ var validatePolicyProfile = function () {
             if (!wifiSSID) {
                 validationStatus = {
                     "error": true,
-                    "subErrorMsg": "WIFI SSID is not given. You cannot proceed.",
+                    "subErrorMsg": "没有给出WIFI SSID。 你不能继续。",
                     "erroneousFeature": operation
                 };
                 continueToCheckNextInputs = false;
@@ -284,8 +284,8 @@ var validatePolicyProfile = function () {
                 if (!$("#wifi-password").val()) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Password is required for the wifi security type " + wifiType + ". " +
-                        "Please provide a password to proceed.",
+                        "subErrorMsg": "无线安全类型需要密码 " + wifiType + ". " +
+                        "请输入密码以继续。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
@@ -314,7 +314,7 @@ var validatePolicyProfile = function () {
             if (!serverAddress) {
                 validationStatus = {
                     "error": true,
-                    "subErrorMsg": "Server address is required. You cannot proceed.",
+                    "subErrorMsg": "服务器地址是必填的。 你不能继续。",
                     "erroneousFeature": operation
                 };
                 continueToCheckNextInputs = false;
@@ -325,22 +325,21 @@ var validatePolicyProfile = function () {
                 if (!serverPort) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "VPN server port is required. You cannot proceed.",
+                        "subErrorMsg": "VPN 服务端口是必填的，你不能继续。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
                 } else if (!$.isNumeric(serverPort)) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "VPN server port requires a number input.",
+                        "subErrorMsg": "VPN 服务端口必须为数字。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
                 } else if (!inputIsValidAgainstRange(serverPort, 0, 65535)) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "VPN server port is not within the range " +
-                        "of valid port numbers.",
+                        "subErrorMsg": "VPN服务器端口不在有效端口号的范围内。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
@@ -372,7 +371,7 @@ var validatePolicyProfile = function () {
             if (!appRestrictionType) {
                 validationStatus = {
                     "error": true,
-                    "subErrorMsg": "Applications restriction type is not provided.",
+                    "subErrorMsg": "不提供应用程序限制类型。",
                     "erroneousFeature": operation
                 };
                 continueToCheckNextInputs = false;
@@ -382,7 +381,7 @@ var validatePolicyProfile = function () {
                 if ($(restrictedApplicationsGridChildInputs).length == 0) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Applications are not provided in application restriction list.",
+                        "subErrorMsg": "应用程序不在应用程序限制列表中提供。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
@@ -427,8 +426,7 @@ var validatePolicyProfile = function () {
                         // If empty child inputs are present
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "One or more package names of " +
-                            "applications are empty.",
+                            "subErrorMsg": "一个或多个应用程序包名称为空。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;
@@ -436,8 +434,7 @@ var validatePolicyProfile = function () {
                         // If duplicate input is present
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "Duplicate values exist with " +
-                            "for package names.",
+                            "subErrorMsg": "软件包名称存在重复值。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;
@@ -466,7 +463,7 @@ var validatePolicyProfile = function () {
                 if ($(whitelistedApplicationsGridChildInputs).length == 0) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Applications are not provided in application whitelist list.",
+                        "subErrorMsg": "应用程序不在应用程序白名单列表中提供。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
@@ -511,8 +508,7 @@ var validatePolicyProfile = function () {
                         // If empty child inputs are present
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "One or more package names of " +
-                            "applications are empty.",
+                            "subErrorMsg": "一个或多个应用程序包名称为空。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;
@@ -520,8 +516,7 @@ var validatePolicyProfile = function () {
                         // If duplicate input is present
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "Duplicate values exist with " +
-                            "for package names.",
+                            "subErrorMsg": "软件包名称存在重复值。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;

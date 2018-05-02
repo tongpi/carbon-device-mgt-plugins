@@ -29,49 +29,48 @@
 </div>
 
 <div class="col-xs-12 col-sm-8 col-md-9 col-lg-9 padding-top">
-    <h3 class="uppercase">What it Does</h3>
+    <h3 class="uppercase">它是做什么的</h3>
     <hr>
-    <p class="grey margin-top">Connect the Arduino UNO board to WSO2 IoT Server and visualize sensor data.</p>
+    <p class="grey margin-top">将Arduino UNO板连接到WSO2 IoT Server并可视化传感器数据。</p>
     <br>
-    <h3 class="uppercase">What You Need</h3>
+    <h3 class="uppercase">你需要什么</h3>
     <hr>
     <ul class="list-unstyled">
         <li class="padding-top-double">
-            <span class="badge">ITEM 01</span>
-            Arduino UNO Board.
+            <span class="badge">第 01 项</span>
+            Arduino UNO 板。
         </li>
         <li>
-            <span class="badge">ITEM 02</span>
-            Adafruit WiFi Shield for Arduino.
+            <span class="badge">第 02 项</span>
+          	给 Arduino的部件 WiFi Shield。
         </li>
         <li>
-            <span class="badge">ITEM 03</span>
-            A LED bulb connected to pin 13. If you do not have a LED bulb, use the one on the Arduino board. The one on the board is connected to pin 13 by default.
+            <span class="badge">第 03 项</span>
+            LED灯泡连接到引脚13.如果您没有LED灯泡，请使用Arduino板上的灯泡。 板上的一个默认连接到引脚13。
         </li>
         <li>
-            <span class="badge">ITEM 04</span>
-            Resister (e.g., 330 ohm)
+            <span class="badge">第 04 项</span>
+            	电阻 (如 330 欧姆)
         </li>
         <li>
-            <span class="badge">STEP 05</span>
-            Next, proceed to the [Prepare] section. (remove the step 5 coz that' is the only step all the others are items.)
+            <span class="badge">步骤 05</span>
+           	 接下来，转到[准备]部分。去掉步骤5，因为这是所有其他事件的唯一步骤。
     </ul>
     <br>
     <a href="/api-store/apis/info?name={{@uriParams.deviceType}}&version=1.0.0&provider=admin"
        class="btn-operations" target="_blank">
-        <i class="fw fw-api add-margin-1x"></i> View API
+        <i class="fw fw-api add-margin-1x"></i> 查看 API
     </a>
     <a href="#" class="download-link btn-operations">
-        <i class="fw fw-download add-margin-1x"></i>Download Sketch
+        <i class="fw fw-download add-margin-1x"></i>下载 缩略图
     </a>
-    <p class="doc-link">Click <a href="https://docs.wso2.com/display/IoTS320/Arduino"
-                                 target="_blank">here</a> for latest instructions and
-        troubleshooting.</p>
+    <p class="doc-link">了解最新的指示和故障排除，点击 <a href="https://docs.wso2.com/display/IoTS320/Arduino"
+                                 target="_blank">[ 这 ]</a> 。</p>
     <div id="download-device-modal-content" class="hide">
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7  center-container">
-                    <h3>Name your device and download the agent from following link.</h3>
+                    <h3>为您的设备命名并从以下链接下载代理。</h3>
                     <br/>
                     <form id="downloadForm" method="GET"
                           action="{{@app.context}}/api/devices/sketch/download">
@@ -83,7 +82,7 @@
                             <div class="controls">
                                 <input class="new-device-name" style="color:#3f3f3f;padding:5px"
                                        type="text"
-                                       placeholder="Ex. Home_Arduino"
+                                       placeholder="如 Home_Arduino"
                                        name="deviceName" size="60" required>
                                 <br/><br/>
                                 <input type="hidden" class="deviceType" name="deviceType"
@@ -94,7 +93,7 @@
                         </div>
                         <div class="buttons" style="padding-bottom: 0px">
                             <a class="btn btn-operations" onclick="downloadAgent()">
-                                Download Now
+                               	 现在下载
                             </a>
                         </div>
                     </form>
@@ -106,7 +105,7 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Device Agent will downloading shortly.</h3>
+                    <h3>设备代理将很快下载。</h3>
                 </div>
             </div>
         </div>
@@ -115,10 +114,10 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Exception at backend. Try Later.</h3>
+                    <h3>后台异常。请稍后重试。</h3>
                     <div class="buttons">
                         <a href="#" id="device-400-link" class="btn-operations">
-                            OK
+                           	 好的
                         </a>
                     </div>
                 </div>
@@ -129,13 +128,13 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>You have to log in first.</h3><br/>
+                    <h3>你必须先登录。</h3><br/>
                     <div class="buttons">
                         <a href="#" id="device-401-link" class="blue-button">
-                            Goto Login Page
+                           	转到登录页面
                         </a>
                         <a href="#" onclick="hidePopup();" class="btn-operations">
-                            Cancel
+                            	取消
                         </a>
                     </div>
                 </div>
@@ -146,10 +145,10 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Action not permitted.</h3><br/>
+                    <h3>操作不允许。</h3><br/>
                     <div class="buttons">
                         <a href="#" id="device-403-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -160,10 +159,10 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Device Sketch does not exist.</h3><br/>
+                    <h3>设备程序不存在。</h3><br/>
                     <div class="buttons">
                         <a href="#" id="device-409-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -175,10 +174,10 @@
         <div class="modal-content">
             <div class="row">
                 <div class="col-md-7 col-centered center-container">
-                    <h3>Unexpected error.</h3><br/>
+                    <h3>异常错误。</h3><br/>
                     <div class="buttons">
                         <a href="#" id="device-unexpected-error-link" class="btn-operations">
-                            OK
+                            	好的
                         </a>
                     </div>
                 </div>
@@ -190,16 +189,16 @@
 </div>
 
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-double grey-bg">
-    <h3 class="uppercase">Prepare</h3>
+    <h3 class="uppercase">准备</h3>
     <hr>
     <ul class="list-unstyled">
         <li class="padding-top-double">
             <span class="badge">01</span>
-            Mount the WiFi shield to the Arduino UNO board.
+            	将WiFi shield安装到 Arduino UNO 板。
         </li>
         <li class="padding-top-double">
             <span class="badge">02</span>
-            Connect the LED bulb to Arduino as shown below:
+            	连接到Arduino的LED灯泡，如下图所示：
             <br/><br/>
             <a href="{{@unit.publicUri}}/images/schematicsGuide.jpg" target="_blank">
                 <img src="{{@unit.publicUri}}/images/schematicsGuide.jpg" class="img-responsive">
@@ -207,31 +206,30 @@
             <br/>
         </li>
 
-        <li class="padding-top-double">
-            <span class="badge">03</span>
-            Click [Download Sketch] above to download the Arduino Sketch.
+        <li class="padding-top-double">            <span class="badge">03</span>
+            	点击 [Download Sketch] 以上下载Arduino程序。
         </li>
         <li class="padding-top-double">
             <span class="badge">04</span>
-            Unzip the downloaded Arduino agent.
+           	 解压下载的Arduino代理。
         </li>
         <li class="padding-top-double">
             <span class="badge">05</span>
-            Create a folder by the name ArduinoBoardSketch and move the downloaded agent and the source files to it.
+            按名称ArduinoBoardSketch创建一个文件夹，并将下载的代理和源文件移动到该文件夹中。
         </li>
         <li class="padding-top-double">
             <span class="badge">06</span>
-            Open the ArduinoBoardSketch.h file and provide the values for the
+            	打开ArduinoBoardSketch.h文件并为其提供值
             <i>[WLAN_SSID]</i>,
             <i>[WLAN_PASS]</i>,
             <i>[SERVICE_PORT]</i>,
             <i>[server]</i> and
             <i>[deviceIP]</i>
-            variables for the device to connect to your WiFi network.
+           	 设备连接到WiFi网络的变量。
         </li>
         <li class="padding-top-double">
             <span class="badge">07</span>
-            Burn the sketch onto your Arduino board and let the program run.
+           	  烧程序到Arduino板上并让程序运行。
         </li>
         <li class="padding-top-double">
 
@@ -239,14 +237,14 @@
                 <i class="fw fw-circle-outline fw-stack-2x"></i>
                 <i class="fw fw-right-arrow fw-stack-1x"></i>
             </span>
-            The Arduino will publish its internal temperature to WSO2 IoT Server.
+            	Arduino将向WSO2物联网服务器发送其内部温度。
             <br/><br/>
 
             <span class="fw-stack margin-right">
                 <i class="fw fw-circle-outline fw-stack-2x"></i>
                 <i class="fw fw-right-arrow fw-stack-1x"></i>
             </span>
-            Control the LED on <i>PIN 13</i> via the Device Management page.
+            	通过设备管理页面控制在引脚13上的LED灯。
         </li>
     </ul>
     <br>
@@ -255,27 +253,26 @@
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 padding-double">
     <div class="row">
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-double">
-            <h3 class="uppercase">Try Out</h3>
+            <h3 class="uppercase">尝试</h3>
             <hr>
             <ul class="list-unstyled">
                 <li class="padding-top-double">
                     <span class="badge">01</span>
-                    View all your connected devices in the 
-                    <a href="{{@app.context}}/devices">[Device Management]</a> page.
+                    	查看您的所有连接设备 <a href="{{@app.context}}/devices"> [设备管理] </a>页面。
                 </li>
                 <li class="padding-top-double">
                     <span class="badge">02</span>
-                    Try out the control operations on your connected devices and monitor real-time data.
+                    	试用连接设备上的控制操作并监控实时数据。
                 </li>
                 <li class="padding-top-double">
                     <span class="badge">03</span>
-                    Do we need this step? Is this supported?
+                    	我们需要这一步吗？ 是否支持？
                 </li>
             </ul>
             <br/>
         </div>
         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 padding-double">
-            <p class="grey margin-top">Click on the image to zoom</p>
+            <p class="grey margin-top">点击图片放大</p>
             <center>
                 <a href="{{@unit.publicUri}}/images/myDevices_analytics.png" target="_blank">
                     <img src="{{@unit.publicUri}}/images/myDevices_analytics.png"

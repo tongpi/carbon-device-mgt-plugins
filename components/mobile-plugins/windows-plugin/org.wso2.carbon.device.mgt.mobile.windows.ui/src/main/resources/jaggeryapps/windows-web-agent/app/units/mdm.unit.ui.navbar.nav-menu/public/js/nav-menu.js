@@ -101,23 +101,22 @@ function loadNewNotifications() {
                         if (responsePayload.count > 0) {
                             $(messageSideBar).html(template(viewModel));
                         } else {
-                            $(messageSideBar).html("<h4 class='text-center'>No new notifications found...</h4>");
+                            $(messageSideBar).html("<h4 class='text-center'>没有发现新通知...</h4>");
                         }
                     } else {
-                        $(messageSideBar).html("<h4 class ='message-danger'>Unexpected error occurred while loading new notifications.</h4>");
+                        $(messageSideBar).html("<h4 class ='message-danger'>加载新通知时出现异常错误。</h4>");
                     }
                 }
             };
             var errorCallback = function (jqXHR) {
                 if (jqXHR.status = 500) {
-                    $(messageSideBar).html("<h4 class ='message-danger'>Unexpected error occurred while trying " +
-                        "to retrieve any new notifications.</h4>");
+                    $(messageSideBar).html("<h4 class ='message-danger'>尝试检索新通知时发生意外错误。</h4>");
                 }
             };
             invokerUtil.get(serviceURL, successCallback, errorCallback);
         });
     } else {
-        $(messageSideBar).html("<h4 class ='message-danger'>You are not authorized to view notifications</h4>");
+        $(messageSideBar).html("<h4 class ='message-danger'>您无权查看通知。</h4>");
     }
 }
 
@@ -335,9 +334,8 @@ $(document).ready(function () {
                     location.href = redirectUrl;
                 }
             }, function () {
-                var content = "<li class='message message-danger'><h4><i class='icon fw fw-error'></i>Warning</h4>" +
-                    "<p>Unexpected error occurred while loading notification. Please refresh the page and" +
-                    " try again</p></li>";
+                var content = "<li class='message message-danger'><h4><i class='icon fw fw-error'></i>警告</h4>" +
+                    "<p>加载通知时发生异常错误。请刷新页面重试。</p></li>";
                 $(messageSideBar).html(content);
             }
         );

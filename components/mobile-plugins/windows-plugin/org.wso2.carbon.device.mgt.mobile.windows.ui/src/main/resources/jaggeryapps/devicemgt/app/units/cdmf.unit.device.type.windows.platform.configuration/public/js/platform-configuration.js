@@ -122,7 +122,7 @@ $(document).ready(function () {
     $(fileInputWindowsMDMCert).change(function () {
 
         if (!window.File || !window.FileReader || !window.FileList || !window.Blob) {
-            $(errorMsgWindows).text("The File APIs are not fully supported in this browser.");
+            $(errorMsgWindows).text("该浏览器不支持文件 API。");
             $(errorMsgWrapperWindows).removeClass("hidden");
             notSupportedError = true;
             return;
@@ -152,13 +152,13 @@ $(document).ready(function () {
         var windowsLicense = tinyMCE.activeEditor.getContent();
 
         if (!notifierFrequency) {
-            $(errorMsgWindows).text("Polling Interval is a required field. It cannot be empty.");
+            $(errorMsgWindows).text("轮询间隔必填，不能为空。");
             $(errorMsgWrapperWindows).removeClass("hidden");
         } else if (!windowsLicense) {
-            $(errorMsgWindows).text("License is a required field. It cannot be empty.");
+            $(errorMsgWindows).text("许可证必填，不能为空。");
             $(errorMsgWrapperWindows).removeClass("hidden");
         } else if (!$.isNumeric(notifierFrequency)) {
-            $(errorMsgWindows).text("Provided Notifier frequency is invalid. It must be a number.");
+            $(errorMsgWindows).text("提供的通知频率无效。 必须是一个数字。");
             $(errorMsgWrapperWindows).removeClass("hidden");
         } else {
             var addConfigFormData = {};
@@ -193,22 +193,22 @@ $(document).ready(function () {
                         $("#config-save-form").addClass("hidden");
                         $("#record-created-msg").removeClass("hidden");
                     } else if (data == 500) {
-                        $(errorMsgWindows).text("Exception occurred at backend.");
+                        $(errorMsgWindows).text("后台发生异常。");
                     } else if (data == 400) {
-                        $(errorMsgWindows).text("Configurations cannot be empty.");
+                        $(errorMsgWindows).text("配置不能为空。");
                     } else {
-                        $(errorMsgWindows).text("An unexpected error occurred.");
+                        $(errorMsgWindows).text("发生异常错误。");
                     }
 
                     $(errorMsgWrapperWindows).removeClass("hidden");
                 }, function (data) {
                     data = data.status;
                     if (data == 500) {
-                        $(errorMsgWindows).text("Exception occurred at backend.");
+                        $(errorMsgWindows).text("后台发生异常。");
                     } else if (data == 403) {
-                        $(errorMsgWindows).text("Action was not permitted.");
+                        $(errorMsgWindows).text("操作不允许。");
                     } else {
-                        $(errorMsgWindows).text("An unexpected error occurred.");
+                        $(errorMsgWindows).text("发生异常错误。");
                     }
                     $(errorMsgWrapperWindows).removeClass("hidden");
                 }

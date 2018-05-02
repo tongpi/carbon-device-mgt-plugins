@@ -620,7 +620,7 @@
                     // title is never undefined, so handle empty string as undefined
                     !this.settings.ignoreTitle && element.title || undefined,
                     $.validator.messages[method],
-                    "<strong>Warning: No message defined for " + element.name + "</strong>"
+                    "<strong>警告：" + element.name + "没有定义消息</strong>"
                 );
             },
 

@@ -18,22 +18,22 @@
             data-status="{{device.status}}">
             {{device.owner}}'s {{device.name}}
             </h1>
-            <a id="device-info-tooltip" href="#" data-toggle="tooltip" title="Device Identifier: {{device.deviceIdentifier}}
-              Firmware Build Date: {{device.osBuildDate}}
+            <a id="device-info-tooltip" href="#" data-toggle="tooltip" title="设备标识符: {{device.deviceIdentifier}}
+              	固件版本日期: {{device.osBuildDate}}
               UDID: {{device.udid}}">
               <i class="fw fw-info"></i>
             </a>
             {{#if device.model}}
               <h4>{{device.vendor}} {{device.model}}</h4>
             {{/if}}
-            <h4>Ownership - <strong>{{device.ownership}}</strong></h4>
-            <h4>Device is
+            <h4>所有权 - <strong>{{device.ownership}}</strong></h4>
+            <h4>设备是
               <strong>
-                {{#equal device.status "ACTIVE"}}Active{{/equal}}
-                {{#equal device.status "INACTIVE"}}Inactive{{/equal}}
-                {{#equal device.status "BLOCKED"}}Blocked{{/equal}}
-                {{#equal device.status "REMOVED"}}Removed{{/equal}}
-                {{#equal device.status "UNREACHABLE"}}Unreachable{{/equal}}
+                {{#equal device.status "ACTIVE"}}激活的{{/equal}}
+                {{#equal device.status "INACTIVE"}}闲置的{{/equal}}
+                {{#equal device.status "BLOCKED"}}阻塞的{{/equal}}
+                {{#equal device.status "REMOVED"}}已移除{{/equal}}
+                {{#equal device.status "UNREACHABLE"}}未找到{{/equal}}
               </strong>
             </h4>
         {{/zone}}
@@ -42,7 +42,7 @@
             {{#if device.isNotRemoved}}
                 <div class="operation-container">
                   <div class="operation-title">
-                      <h4>Device Operations</h4>
+                      <h4>设备操作</h4>
                   </div>
                   {{unit "cdmf.unit.device.type.windows.new.operation-bar" device=device
                   backendApiUri=backendApiUri autoCompleteParams=autoCompleteParams}}
@@ -64,8 +64,7 @@
                 </p>
               {{/if}}
             {{else}}
-              <p>Battery, RAM and Storage related information are not
-              available yet.</p>
+              <p>电池，RAM和存储相关信息尚不可用。</p>
             {{/if}}
         </div>
         {{/zone}}
@@ -74,8 +73,8 @@
             <li><a data-toggle="tab" href="#location"
                    data-lat="{{device.location.latitude}}"
                    data-long="{{device.location.longitude}}"
-                   class="initGeoLocationLink">Location</a></li>
-            <li><a data-toggle="tab" href="#policy">Policy Compliance</a></li>
+                   class="initGeoLocationLink">位置</a></li>
+            <li><a data-toggle="tab" href="#policy">策略合规</a></li>
         {{/zone}}
 
         {{#zone "device-view-tab-injected-conents"}}
@@ -91,9 +90,8 @@
                     <div id="map-error" class="message message-warning">
                         <h4 class="remove-margin">
                             <i class="icon fw fw-warning"></i>
-                            The device location information is not available right now! Please refresh the page in a few minutes.
-                            The location details will not be available if the device’s “Location Services setting” is disabled
-                            or if WSO2 IoT Server has not received the device’s location information from the device.
+                            	设备位置信息目前不可用！ 请在几分钟内刷新页面。 如果设备的“位置服务设置”被禁用，
+                            	或者WSO2 IoT服务器尚未从设备收到设备的位置信息，则位置详细信息将不可用。
                         </h4>
                     </div>
                     <p class="add-padding-5x"></p>
@@ -112,17 +110,17 @@
         </div>
     {{else}}
         <h1 class="page-sub-title">
-            Permission Denied
+            	无权限
         </h1>
         <br>
-        You are not authorized to view specified device in the system.
+        	您无权查看系统中的指定设备。
     {{/if}}
 {{else}}
     <h1 class="page-sub-title">
-        Device not found
+        	未发现设备
     </h1>
     <br>
-    You have tried to access either a removed or non-existing device.
+    	您尝试访问的设备已删除或不存在。
 {{/if}}
 
 {{#zone "bottomJs"}}

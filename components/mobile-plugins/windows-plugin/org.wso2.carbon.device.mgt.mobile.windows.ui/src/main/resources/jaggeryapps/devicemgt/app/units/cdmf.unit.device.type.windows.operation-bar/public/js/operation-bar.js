@@ -226,7 +226,7 @@ function runOperation(operationName) {
         var messageTitle = $("#messageTitle").val();
         var messageText = $("#messageText").val();
         if (!(messageTitle && messageText)) {
-            $(errorMsg).text("Enter a message. It cannot be empty.");
+            $(errorMsg).text("输入消息。 它不能为空。");
             $(errorMsgWrapper).removeClass("hidden");
         } else {
             invokerUtil.post(serviceEndPoint, payload, successCallback, errorCallback);

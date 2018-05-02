@@ -60,13 +60,13 @@ function changeLabels() {
     var infoTxt = document.getElementById('defaultFileLocation');
     console.log("info text " + infoTxt.value);
     jQuery(upload).change(function () {
-        document.getElementById('fileURL').placeholder = "File URL";
-        document.getElementById('fileLocation').placeholder = "Location to save file in device";
+        document.getElementById('fileURL').placeholder = "文件网址";
+        document.getElementById('fileLocation').placeholder = "在设备中保存文件的位置";
         $(infoTxt).show();
     });
     jQuery(download).change(function () {
-        document.getElementById('fileURL').placeholder = "URL to upload file from device";
-        document.getElementById('fileLocation').placeholder = "File location in the device";
+        document.getElementById('fileURL').placeholder = "从设备上传文件的网址";
+        document.getElementById('fileLocation').placeholder = "设备中的文件位置";
         $(infoTxt).hide();
     });
 }
@@ -104,7 +104,7 @@ function fillUserName() {
                 document.getElementById('userName').value = name.substring(3, name.length - 1);
             } else {
                 document.getElementById('userName').value = "";
-                document.getElementById('userName').placeholder = "User Name"
+                document.getElementById('userName').placeholder = "用户名"
             }
         }
     );
@@ -168,7 +168,7 @@ function submitForm(formId) {
             } catch (err) {
                 //do nothing
             }
-            title.html("Operation Triggered!");
+            title.html("触发操作!");
             statusIcon.attr("class", defaultStatusClasses + " fw-check");
             description.html(res);
             // console.log("success!");
@@ -177,7 +177,7 @@ function submitForm(formId) {
         };
         var errorCallBack = function (response) {
             // console.log(response);
-            title.html("An Error Occurred!");
+            title.html("发生错误!");
             statusIcon.attr("class", defaultStatusClasses + " fw-error");
             var reason = (response.responseText == "null") ? response.statusText : response.responseText;
             try {
@@ -202,9 +202,9 @@ function submitForm(formId) {
         } else if (httpMethod == "DELETE") {
             invokerUtil.delete(uri, successCallBack, errorCallBack, contentType);
         } else {
-            title.html("An Error Occurred!");
+            title.html("发生错误!");
             statusIcon.attr("class", defaultStatusClasses + " fw-error");
-            description.html("This operation requires http method: " + httpMethod + " which is not supported yet!");
+            description.html("该操作需要http方法: " + httpMethod + " 目前还不支持!");
             resetLoader(formId);
             $(modalPopupContent).html(content.html());
         }
@@ -256,7 +256,7 @@ function validatePayload(operationCode, payload) {
     switch (operationCode) {
         case "NOTIFICATION":
             if (!payload.messageText) {
-                returnVal = "Message Body Can't be empty !";
+                returnVal = "消息正文不能为空!";
             }
             break;
         case "FILE_TRANSFER":
@@ -279,19 +279,19 @@ function validateFileTransferParameters(payload) {
     var auth = document.getElementById('authentication');
     var protocol = $(document.getElementById('protocol')).find("option:selected").text();
     if (payload.upload && !payload.fileURL) {
-        returnVal = "Please enter File URL";
+        returnVal = "请输入文件网址";
     } else if (!payload.upload && !payload.fileURL) {
-        returnVal = "Please enter the URL to upload file from device";
+        returnVal = "请输入要从设备上上传文件的网址";
     } else if (protocol === "HTTP" && !(payload.fileURL).startsWith("http:")) {
-        returnVal = "Please enter HTTP URL"
+        returnVal = "请输入HTTP网址"
     } else if (protocol === "FTP" && !(payload.fileURL).startsWith("ftp:")) {
-        returnVal = "Please enter FTP URL"
+        returnVal = "请输入 FTP网址"
     } else if (protocol === "SFTP" && !(payload.fileURL).startsWith("sftp:")) {
-        returnVal = "Please enter SFTP URL"
+        returnVal = "请输入 SFTP网址"
     } else if (!payload.upload && !payload.fileLocation) {
-        returnVal = "Please specify the file location in device";
+        returnVal = "请指定设备中的文件位置";
     } else if (auth.checked && !payload.userName) {
-        returnVal = "Please enter the user name if authentication required"
+        returnVal = "如果需要验证，请输入用户名"
     }
     return returnVal;
 }

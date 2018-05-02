@@ -5,9 +5,9 @@
 <div class="row">
     <div class="col-lg-12">
         {{#if isVirtual}}
-            <h1 class="grey ">DOWNLOAD THE VIRTUAL ANDROID DEVICE</h1>
+            <h1 class="grey ">下载虚拟Android设备</h1>
         {{else}}
-            <h1 class="grey ">DOWNLOAD THE ANDROID AGENT</h1>
+            <h1 class="grey ">下载Android代理</h1>
         {{/if}}
         <hr>
     </div>
@@ -19,26 +19,26 @@
     </div>-->
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 add-padding-top-2x add-padding-bottom-2x">
         {{#if isVirtual}}
-            <h3 class="text-center add-padding-bottom-4x">Download our virtual Android device, enroll it with WSO2
+            <h3 class="text-center add-padding-bottom-4x">下载我们的虚拟Android设备，登记它在WSO2
                 {{#if isCloud}}
-                    Device Cloud
+                   	 设备云服务器
                 {{else}}
-                    IoT Server
-                {{/if}}and try it out!</h3>
+                   	物联网服务器
+                {{/if}}，试试看!</h3>
             <div class="text-center"><a
                     href="{{@unit.publicUri}}/assets/android-tryit.ZIP"
                     class="btn-operations remove-margin download_agent">
-                <i class="fw fw-download fw-inverse fw-lg add-margin-1x"></i>Download the virtual Android device</a>
+                <i class="fw fw-download fw-inverse fw-lg add-margin-1x"></i>下载虚拟Android设备</a>
             </div>
         {{else}}
-            <h3 class="text-center">Scan to get the Android Agent.</h3>
+            <h3 class="text-center">扫描获取Android代理</h3>
             <div class="enrollment-qr-container text-center"></div>
-            <h3 class="text-center add-margin-bottom-2x add-margin-top-2x">or</h3>
+            <h3 class="text-center add-margin-bottom-2x add-margin-top-2x">或</h3>
             {{#if isCloud}}
                 <div class="text-center">
                     <a href='https://play.google.com/store/apps/details?id=org.wso2.iot.agent&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
                        target="_blank">
-                        <img alt='Get it on Google Play'
+                        <img alt='在Google Play上获取'
                              src='{{@unit.publicUri}}/images/en_badge_web_generic_export.png'/>
                     </a>
                 </div>
@@ -46,37 +46,37 @@
                 <div class="text-center">
                     <a href="{{enrollmentURL}}"
                        class="btn-operations remove-margin download_agent">
-                        <i class="fw fw-download fw-inverse fw-lg add-margin-1x"></i> Download APK</a>
+                        <i class="fw fw-download fw-inverse fw-lg add-margin-1x"></i> 下载 APK</a>
                 </div>
             {{/if}}
         {{/if}}
     </div>
     {{#if isCloud}}
-        <p class="doc-link text-center">Need help? Read <a
+        <p class="doc-link text-center">需要帮助？阅读 <a
             {{#if isVirtual}}
             href="https://docs.wso2.com/display/DeviceCloud/Quick+Start+Guide"
             {{else}}
             href="https://docs.wso2.com/display/DeviceCloud/Enrolling+an+Android+Device"
             {{/if}}
-            target="_blank">WSO2 Device Cloud documentation.</a>
+            target="_blank">WSO2 设备云服务器文档 。</a>
         </p>
     {{else}}
-        <p class="doc-link text-center">Need help? Read <a
+        <p class="doc-link text-center">需要帮助？阅读 <a
             {{#if isVirtual}}
                 href="https://docs.wso2.com/display/IoTS320/Android+Virtual+Device"
             {{else}}
                 href="https://docs.wso2.com/display/IoTS320/Android"
             {{/if}}
-             target="_blank">WSO2 IoT Server documentation.</a></p>
+             target="_blank">WSO2 物联网服务器文档。</a></p>
     {{/if}}
 </div>
 
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-8 col-lg-12 add-padding-top-2x ">
         {{#if isVirtual}}
-            <h3 class="uppercase">TRY OUT THE VIRTUAL ANDROID DEVICE</h3>
+            <h3 class="uppercase">试试虚拟Android设备</h3>
         {{else}}
-            <h3 class="uppercase">START ENROLLING YOUR DEVICE</h3>
+            <h3 class="uppercase">开始登记你的设备</h3>
         {{/if}}
         <hr>
     </div>
@@ -85,26 +85,24 @@
 <div class="row grey-bg">
     {{#if isCloud}}
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 1</strong></h5>
+            <h5><strong>步骤 1</strong></h5>
             {{#if isVirtual}}
                 <div class="add-min-height">
                     <ol>
-                        <li>Unzip the 'android-tryit.zip file and run the 'start' script on your terminal.</li>
-                        <li>Download and install the Android SDK:
+                        <li>解压android-tryit.zip文件和在你的终端运行'start'脚本.</li>
+                        <li>下载和安装 Android SDK:
                             <ul>
-                                <li>If you already have an Android SDK on your computer, please provide the location of
-                                    the SDK.
+                                <li>如果您的计算机上已经有Android SDK，请提供SDK的位置。
                                 </li>
-                                <li>Else, this tool will download and install the minimum SDK components required to run
-                                    the emulator.
-                                    This is a one-time process.
+                                <li>否则，该工具将下载并安装运行模拟器所需的最低SDK组件。
+                                	 这是一次性过程。
                                 </li>
                             </ul>
                         </li>
-                        <li>Next, you will be asked to create an AVD:
+                        <li>接下来，您将被要求创建一个AVD：
                             <ul>
-                                <li>If you don't have one, the WSO2_AVD will be created for you.</li>
-                                <li>Else, you can use an existing AVD to try out IoT Android agent.</li>
+                                <li>如果您没有，则会为您创建WSO2_AVD。</li>
+                                <li>否则，您可以使用现有的AVD来试用IoT Android代理。</li>
                             </ul>
                         </li>
                     </ol>
@@ -112,58 +110,54 @@
                 <img src="{{@unit.publicUri}}/images/android-tryit.png" class="img-responsive">
             {{else}}
                 <div class="add-min-height">
-                    <p>Let's start by opening the Android agent on your device.
-                        <br/>Tap on <b>WSO2 Device Management Agent</b>.
+                    <p>首先打开设备上的Android代理。
+                        <br/>轻按 <b>WSO2 Device Management Agent</b>.
                     </p>
                 </div>
                 <img src="{{@unit.publicUri}}/images/launch_agent.png" class="img-responsive">
             {{/if}}
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 2</strong></h5>
+            <h5><strong>步骤 2</strong></h5>
             <div class="add-min-height">
-                <p>Enter your :</p>
+                <p>输入您的 :</p>
                 <ul>
-                    <li>Username: <b>{{@user.username}}</b></li>
-                    <li>Password: <i>Your Cloud password.</i></li>
+                    <li>用户名: <b>{{@user.username}}</b></li>
+                    <li>密码: <i>你的云服务器密码.</i></li>
                 </ul>
             </div>
             <img src="{{@unit.publicUri}}/images/register-cloud.png" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-md-offset-1 col-lg-offset-1 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 3</strong></h5>
+            <h5><strong>步骤 3</strong></h5>
             <div class="add-min-height">
-                <p>To successfully register the device,</p>
+                <p>要成功注册设备，</p>
                 <ul>
-                    <li>Tap <b>ALLOW</b> to provide the necessary permissions.</li>
-                    <li>Tap <b>ACTIVATE</b> to enable the device administrator.</li>
+                    <li>点击 <b>ALLOW</ b>提供必要的权限。</li>
+                    <li>点击<b>ACTIVATE</ b>以启用设备管理员。</li>
                 </ul>
             </div>
         </div>
     {{else}}
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 1</strong></h5>
+            <h5><strong>步骤 1</strong></h5>
             {{#if isVirtual}}
                 <div class="add-min-height">
                     <ol>
-                        <li>Unzip the 'android-tryit.zip file and run the 'start' script on your terminal.</li>
-                        <li>Download and install the Android SDK.
+                        <li>解压android-tryit.zip文件和在你的终端运行'start'脚本.</li>
+                        <li>下载和安装 Android SDK:
                             <ul>
-                                <li>If you already have an Android SDK on your computer, please provide the location of
-                                    the
-                                    SDK.
+                                <li>如果您的计算机上已经有Android SDK，请提供SDK的位置。
                                 </li>
-                                <li>Else, this tool will download and install the minimum SDK components required to run
-                                    the
-                                    emulator.
-                                    This is a one-time process.
+                                <li否则，该工具将下载并安装运行模拟器所需的最低SDK组件。
+                                	 这是一次性过程。
                                 </li>
                             </ul>
                         </li>
-                        <li>Next, you will be asked to create an AVD:
+                        <li>接下来，您将被要求创建一个AVD：
                             <ul>
-                                <li>If you don't have one, the WSO2_AVD will be created for you.</li>
-                                <li>Else, you can use an existing AVD to try out IoT Android agent.</li>
+                                <li>如果您没有，则会为您创建WSO2_AVD。</li>
+                                <li>否则，您可以使用现有的AVD来试用IoT Android代理。</li>
                             </ul>
                         </li>
                     </ol>
@@ -171,35 +165,34 @@
                 <img src="{{@unit.publicUri}}/images/android-tryit.png" class="img-responsive">
             {{else}}
                 <div class="add-min-height">
-                    <p>Let's start by installing the Android agent on your device. Open the downloaded file, and tap
-                        <b>INSTALL</b>.</p>
+                    <p>首先在设备上安装Android代理。 打开下载的文件，然后点击 <b>INSTALL</b>。</p>
                 </div>
                 <img src="{{@unit.publicUri}}/images/install_agent.png" class="img-responsive">
             {{/if}}
         </div>
 
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 2</strong></h5>
+            <h5><strong>步骤 2</strong></h5>
             <div class="add-min-height">
-                <p>Tap Skip to proceed with the default enrollment process.</p>
+                <p>点击'skip'跳过以继续默认注册过程。</p>
             </div>
             <img src="{{@unit.publicUri}}/images/set_profile.png" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 3</strong></h5>
+            <h5><strong>步骤 3</strong></h5>
             <div class="add-min-height">
-                <p>Enter the server address based on your environment, in the text box provided.</p>
+                <p>在文本框中输入基于您的环境的服务器地址。</p>
             </div>
             <img src="{{@unit.publicUri}}/images/registration.png" class="img-responsive">
         </div>
         <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 add-padding-top-2x add-padding-bottom-2x">
-            <h5><strong>Step 4</strong></h5>
+            <h5><strong>步骤 4</strong></h5>
             <div class="add-min-height">
-                <p>Enter your:</p>
+                <p>输入你的:</p>
                 <ul>
-                    <li>Organization: <b>{{@user.domain}}</b></li>
-                    <li>Username: <b>{{@user.username}}</b></li>
-                    <li>Password: <i>Your password.</i></li>
+                    <li>组织: <b>{{@user.domain}}</b></li>
+                    <li>用户名: <b>{{@user.username}}</b></li>
+                    <li>密码: <i>你的密码。</i></li>
                 </ul>
             </div>
             <img src="{{@unit.publicUri}}/images/register.png" class="img-responsive">

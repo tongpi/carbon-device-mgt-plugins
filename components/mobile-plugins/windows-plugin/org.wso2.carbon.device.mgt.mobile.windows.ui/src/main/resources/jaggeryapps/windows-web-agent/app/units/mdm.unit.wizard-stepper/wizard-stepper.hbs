@@ -45,7 +45,7 @@ under the License. --}}
                 {{#unequal steps.length 1}}
                 {{!-- following stepper title format is visible, if steps.length > 1 --}}
                     <h3>
-                        Step {{math @unit.params.currentStepIndex "+" 1}} :
+                        	步骤 {{math @unit.params.currentStepIndex "+" 1}} :
                         <br class="c-both" /> <br class="c-both" />
                         {{@unit.params.currentStep}}
                     </h3>
@@ -53,7 +53,7 @@ under the License. --}}
                 {{#equal steps.length 1}}
                 {{!-- following stepper title format is visible, if steps.length == 1 --}}
                     <h3>
-                        One step to go :
+                        	走一步 :
                         <br class="c-both" /> <br class="c-both" />
                         {{@unit.params.currentStep}}
                     </h3>

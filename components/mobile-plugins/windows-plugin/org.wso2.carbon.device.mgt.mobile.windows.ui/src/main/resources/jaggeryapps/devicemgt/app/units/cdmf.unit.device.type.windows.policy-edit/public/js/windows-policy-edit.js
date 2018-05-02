@@ -136,7 +136,7 @@ var validatePolicyProfile = function () {
         // updating validationStatus
         validationStatus = {
             "error": true,
-            "mainErrorMsg": "You cannot continue. Zero configured features."
+            "mainErrorMsg": "你不能继续。零配置功能。"
         };
         // updating validationStatusArray with validationStatus
         validationStatusArray.push(validationStatus);
@@ -155,14 +155,14 @@ var validatePolicyProfile = function () {
                 if (!$.isNumeric(passcodePolicyMaxPasscodeAgeInDays)) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Provided passcode age is not a number.",
+                        "subErrorMsg": "提供的密码有效期不是一个数字。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
                 } else if (!inputIsValidAgainstRange(passcodePolicyMaxPasscodeAgeInDays, 1, 730)) {
                     validationStatus = {
                         "error": true,
-                        "subErrorMsg": "Provided passcode age is not with in the range of 1-to-730.",
+                        "subErrorMsg": "提供的密码有效期不在1至730的范围内。",
                         "erroneousFeature": operation
                     };
                     continueToCheckNextInputs = false;
@@ -176,14 +176,14 @@ var validatePolicyProfile = function () {
                     if (!$.isNumeric(passcodePolicyPasscodeHistory)) {
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "Provided passcode history is not a number.",
+                            "subErrorMsg": "提供的历史密码不是数字。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;
                     } else if (!inputIsValidAgainstRange(passcodePolicyPasscodeHistory, 1, 50)) {
                         validationStatus = {
                             "error": true,
-                            "subErrorMsg": "Provided passcode history is not with in the range of 1-to-50.",
+                            "subErrorMsg": "提供的历史密码不咋1至50的范围内。",
                             "erroneousFeature": operation
                         };
                         continueToCheckNextInputs = false;

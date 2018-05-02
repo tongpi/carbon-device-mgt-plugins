@@ -1,6 +1,6 @@
 {
   "id": "devices-table",
-  "title": "Device Listing",
+  "title": "设备列表",
   "type": "gadget",
   "thumbnail": "gadget/devices-table/img/thumbnail.png",
   "data": {
@@ -9,7 +9,7 @@
   "listen": {
     "subscriber": {
       "type": "filter",
-      "description": "Used to listen to any filters"
+      "description": "用于监听任何过滤器"
     }
   }
 }

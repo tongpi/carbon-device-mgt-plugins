@@ -10,19 +10,19 @@
                     <span class="wr-hidden-operations-icon fw-stack">
                         <i class="fw fw-padlock fw-stack-2x"></i>
                     </span>
-            Applications
+            	应用程序
         </a>
         <a href="javascript:void(0)" onclick="showAdvanceOperation('{{features.RESTRICTION.code}}', this)">
                 <span class="wr-hidden-operations-icon fw-stack">
                     <i class="fw fw-settings fw-stack-2x"></i>
                 </span>
-            Restrictions
+            	限制
         </a>
         <a href="javascript:void(0)" onclick="showAdvanceOperation('mail', this)">
                     <span class="wr-hidden-operations-icon fw-stack">
                         <i class="fw fw-message fw-stack-2x"></i>
                     </span>
-            Mail
+            	邮件
         </a>
         <a href="javascript:void(0)" onclick="showAdvanceOperation('{{features.AIR_PLAY.code}}', this)">
                     <span class="wr-hidden-operations-icon fw-stack">
@@ -43,39 +43,39 @@
                                         <i class="fw fw-circle-outline fw-stack-2x"></i>
                                         <i class="fw fw-arrow fw-down-arrow fw-stack-1x"></i>
                                     </span>
-                            Install Public App
+                            	安装公开版 应用程序
                         </a>
                     </h2>
                 </div>
                 <div id="installPublicAppiOS" class="panel-collapse panel-body collapse in" role="tabpanel" aria-labelledby="installPublicAppiOS">
-                    <label class="wr-input-label" for="appIdentifier">App identifier</label>
+                    <label class="wr-input-label" for="appIdentifier">应用程序标识</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="appIdentifier" data-key="appIdentifier" placeholder="Enter App Identifier">
+                        <input type="text" class="form-control operationDataKeys" id="appIdentifier" data-key="appIdentifier" placeholder="输入 应用程序 标识">
                     </div>
-                    <label class="wr-input-label col-sm-4" for="ituneID">iTunes store ID</label>
+                    <label class="wr-input-label col-sm-4" for="ituneID">iTunes 商店 ID</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="ituneID" data-key="ituneID" placeholder="Enter iTunes store ID">
+                        <input type="text" class="form-control operationDataKeys" id="ituneID" data-key="ituneID" placeholder="输入 iTunes 商店 ID">
                     </div>
 
                     <label class="wr-input-label col-sm-4" for="bundleId">Bundle ID</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="bundleId" data-key="bundleId" placeholder="Enter Bundle ID">
+                        <input type="text" class="form-control operationDataKeys" id="bundleId" data-key="bundleId" placeholder="输入Bundle ID">
                     </div>
                     <div class="wr-input-control">
                         <label class="wr-input-control checkbox">
                             <input type="checkbox" class="operationDataKeys" id="appRemoval" data-key="appRemoval"  checked />
-                            <span class="helper" title="Remove App upon dis-enrollment">Remove App upon dis-enrollment<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                            <span class="helper" title="在注销时删除应用程序">在注销时删除应用程序<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                         </label>
                         <!--span>Enable if target network is not open or broadcasting</span-->
                     </div>
                     <div class="wr-input-control">
                         <label class="wr-input-control checkbox">
                             <input type="checkbox" class="operationDataKeys" id="backupData" data-key="backupData" checked />
-                            <span class="helper" title="Prevent backup of App data">Prevent backup of App data<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                            <span class="helper" title="防止应用程序数据的备份">防止应用程序数据的备份<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                         </label>
                         <!--span>Enable if target network is not open or broadcasting</span-->
                     </div>
-                    <a href="javascript:runOperation('{{features.INSTALL_STORE_APPLICATION.code}}')" class="btn-operations">Install</a>
+                    <a href="javascript:runOperation('{{features.INSTALL_STORE_APPLICATION.code}}')" class="btn-operations">安装</a>
                 </div>
 
             </div>
@@ -87,39 +87,39 @@
                                         <i class="fw fw-circle-outline fw-stack-2x"></i>
                                         <i class="fw fw-arrow fw-down-arrow fw-stack-1x"></i>
                                     </span>
-                            Install Enterprise App
+                            	安装企业版应用程序
                         </a>
-                    </h2>
+                    </h2>	
                 </div>
                 <div id="installEnterpriseAppiOS" class="panel-collapse panel-body collapse" role="tabpanel" aria-labelledby="installEnterpriseAppiOS">
-                    <label class="wr-input-label" for="appIdentifier">App identifier</label>
+                    <label class="wr-input-label" for="appIdentifier">应用程序标识</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="appIdentifier" data-key="appIdentifier" placeholder="Enter App Identifier">
+                        <input type="text" class="form-control operationDataKeys" id="appIdentifier" data-key="appIdentifier" placeholder="输入应用程序标识">
                     </div>
                     <label class="wr-input-label col-sm-4" for="manifestURL">Manifest URL</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="manifestURL" data-key="manifestURL" placeholder="Enter manifest URL">
+                        <input type="text" class="form-control operationDataKeys" id="manifestURL" data-key="manifestURL" placeholder="输入 manifest URL">
                     </div>
 
                     <label class="wr-input-label col-sm-4" for="bundleId">Bundle ID</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="bundleId" data-key="bundleId" placeholder="Enter Bundle ID">
+                        <input type="text" class="form-control operationDataKeys" id="bundleId" data-key="bundleId" placeholder="输入 Bundle ID">
                     </div>
                     <div class="wr-input-control">
                         <label class="wr-input-control checkbox">
                             <input type="checkbox" class="operationDataKeys" id="appRemoval" data-key="appRemoval"  checked />
-                            <span class="helper" title="Remove App upon dis-enrollment">Remove App upon dis-enrollment<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                            <span class="helper" title="在注销时删除应用程序">在注销时删除应用程序<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                         </label>
                         <!--span>Enable if target network is not open or broadcasting</span-->
                     </div>
                     <div class="wr-input-control">
                         <label class="wr-input-control checkbox">
                             <input type="checkbox" class="operationDataKeys" id="backupData" data-key="backupData" checked />
-                            <span class="helper" title="Prevent backup of App data">Prevent backup of App data<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                            <span class="helper" title="防止应用程序数据的备份">防止应用程序数据的备份<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                         </label>
                         <!--span>Enable if target network is not open or broadcasting</span-->
                     </div>
-                    <a href="javascript:runOperation('{{features.INSTALL_ENTERPRISE_APPLICATION.code}}')" class="btn-operations">Install</a>
+                    <a href="javascript:runOperation('{{features.INSTALL_ENTERPRISE_APPLICATION.code}}')" class="btn-operations">安装</a>
                 </div>
             </div>
             <div class="panel panel-default operation-data" data-operation="{{features.REMOVE_APPLICATION.code}}">
@@ -130,16 +130,16 @@
                                         <i class="fw fw-circle-outline fw-stack-2x"></i>
                                         <i class="fw fw-arrow fw-down-arrow fw-stack-1x"></i>
                                     </span>
-                            Uninstall App
+                            	卸载应用程序
                         </a>
                     </h2>
                 </div>
                 <div id="removeApplication" class="panel-collapse panel-body collapse" role="tabpanel" aria-labelledby="removeApplication">
                     <label class="wr-input-label col-sm-4" for="bundleId">Bundle ID</label>
                     <div class="wr-input-control">
-                        <input type="text" class="form-control operationDataKeys" id="bundleId" data-key="bundleId" placeholder="Enter Bundle ID">
+                        <input type="text" class="form-control operationDataKeys" id="bundleId" data-key="bundleId" placeholder="输入 Bundle ID">
                     </div>
-                    <a href="javascript:runOperation('{{features.REMOVE_APPLICATION.code}}')" class="btn-operations">Uninstall</a>
+                    <a href="javascript:runOperation('{{features.REMOVE_APPLICATION.code}}')" class="btn-operations">卸载</a>
                 </div>
             </div>
         </div>
@@ -147,16 +147,16 @@
 
         <!-- wi-fi -->
         <div class="wr-hidden-operation panel-body operation-data" data-operation="{{features.WIFI.code}}">
-            <label class="wr-input-label" title="Identification of the wireless network to connect to">Service Set Identifier<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="识别要连接的无线网络">服务集标识符<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Identification of the wireless network to connect to</span-->
             <div class="wr-input-control">
-                <input type="text" class="form-control operationDataKeys" id="ssid" data-key="ssid" placeholder="Enter SSID" />
+                <input type="text" class="form-control operationDataKeys" id="ssid" data-key="ssid" placeholder="输入 SSID" />
             </div>
 
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="hiddenNetwork" data-key="hiddenNetwork" checked />
-                    <span class="helper" title="Enable if target network is not open or broadcasting">Hidden Network<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="如果目标网络未打开或正在广播，请启用">隐藏的网络<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Enable if target network is not open or broadcasting</span-->
             </div>
@@ -164,53 +164,53 @@
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="autoJoin" data-key="autoJoin"  checked />
-                    <span class="helper" title="Automatically join this wireless network">Auto Join<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="自动加入这个无线网络">自动加入<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Automatically join this wireless network</span-->
             </div>
 
-            <label class="wr-input-label" title="Configures proxies to be used with this network">Proxy Setup<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="配置代理以用于此网络">代理设置<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Configures proxies to be used with this network</span-->
             <div class="wr-input-control">
                 <select class="form-control">
-                    <option>None</option>
+                    <option>无</option>
                 </select>
             </div>
 
-            <label class="wr-input-label" title="Wireless network encryption to use when connecting">Security Type<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="连接时使用无线网络加密">加密类型<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Wireless network encryption to use when connecting</span-->
             <div class="wr-input-control">
                 <select class="form-control operationDataKeys" id="encryptionType" data-key="encryptionType">
-                    <option data-id="WPA">WPA/WPA2 Personal</option>
+                    <option data-id="WPA">个人的 WPA/WPA2</option>
                 </select>
             </div>
 
-            <label class="wr-input-label" title="Password for the wireless network">Password<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="无线网络密码">密码<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Password for the wireless network</span-->
             <div class="wr-input-control">
-                <input type="password" value="" class="operationDataKeys" id="password" data-key="password" placeholder="input text"/>
+                <input type="password" value="" class="operationDataKeys" id="password" data-key="password" placeholder="输入文本"/>
             </div>
 
-            <label class="wr-input-label" title="Configures network to appear as legacy or Passport">Network Type<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="将网络配置为旧版或Passport">网络类型<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Configures network to appear as legacy or Passport</span-->
             <div class="wr-input-control">
                 <select class="form-control">
-                    <option>Standard</option>
+                    <option>标准</option>
                 </select>
             </div>
-            <a href="javascript:runOperation('{{features.WIFI.code}}')" class="btn-operations">Configure</a>
+            <a href="javascript:runOperation('{{features.WIFI.code}}')" class="btn-operations">配置</a>
         </div>
         <!-- /wi-fi -->
 
         <!-- mail -->
         <div class="wr-hidden-operation panel-body" data-operation="mail">
-            <label class="wr-input-label" title="The display name of the account">Account Description<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="帐户的显示名称">账号名称<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Identification of the wireless network to connect to</span-->
             <div class="wr-input-control">
-                <input type="text" value="" placeholder="input text"/>
+                <input type="text" value="" placeholder="输入文本"/>
             </div>
 
-            <label class="wr-input-label" title="The protocol for accessing the email account">Account Type<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="访问电子邮件帐户的协议">账号类型<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Configures proxies to be used with this network</span-->
             <div class="wr-input-control">
                 <div class="cus-col-25">
@@ -219,27 +219,27 @@
                     </select>
                 </div>
                 <div class="cus-col-50">
-                    <span>Path Prefix</span> <input type="text" value="" placeholder="input text" />
+                    <span>Path Prefix</span> <input type="text" value="" placeholder="输入文本" />
                 </div>
                 <br class="c-both" />
             </div>
 
-            <label class="wr-input-label" title="The display name of the user">User Display Name<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="用户的显示名称">用户名<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Identification of the wireless network to connect to</span-->
             <div class="wr-input-control">
                 <input type="text" value="" placeholder="input text"/>
             </div>
 
-            <label class="wr-input-label" title="The address of the account">Email Address<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="帐户的地址">电子邮件地址<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Identification of the wireless network to connect to</span-->
             <div class="wr-input-control">
-                <input type="text" value="" placeholder="input text"/>
+                <input type="text" value="" placeholder="输入文本"/>
             </div>
 
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" checked />
-                    <span class="helper" title="Messages can be moved from this account to another">Allow user to move messages from this account<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="消息可以从此帐户移到另一个帐户">允许用户从该帐户中移动消息<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Enable if target network is not open or broadcasting</span-->
             </div>
@@ -247,7 +247,7 @@
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" checked />
-                    <span class="helper" title="Include this account in recent address syncing">Allow Recent Address syncing<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="在最近的地址同步中包含此帐户">允许同步最近地址<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Enable if target network is not open or broadcasting</span-->
             </div>
@@ -255,7 +255,7 @@
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" checked />
-                    <span class="helper" title="Send outgoing mail from this account only from Mail app">Use Only in Mail<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="仅通过邮件应用程序从此帐户发送外发邮件">仅在邮件中使用<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Send outgoing mail from this account only from Mail app</span-->
             </div>
@@ -263,47 +263,47 @@
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" checked />
-                    <span class="helper" title="Support S/MIME for this account">Enable S/MIME<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="帐户支持 S/MIME">启动 S/MIME<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Support S/MIME for this account</span-->
             </div>
 
-            <label class="wr-input-label" title="The protocol for accessing the email account">Mail Server and Port<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="访问电子邮件帐户的协议">邮件服务器和端口<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>The protocol for accessing the email account</span-->
             <div class="wr-input-control">
                 <div class="cus-col-70">
-                    <input type="text" value="" placeholder="input text"/>
+                    <input type="text" value="" placeholder="输入文本"/>
                 </div>
                 <div class="cus-col-25">
-                    <span> : </span><input type="text" value="993" placeholder="input text" />
+                    <span> : </span><input type="text" value="993" placeholder="输入文本" />
                 </div>
                 <br class="c-both" />
             </div>
 
-            <label class="wr-input-label" title="The username used to connect to the server for incoming mail">Username<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="用于连接到服务器以接收邮件的用户名">用户名<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>The Username used to connect to the server for incoming mail</span-->
             <div class="wr-input-control">
-                <input type="text" value="" placeholder="input text"/>
+                <input type="text" value="" placeholder="输入文本"/>
             </div>
 
-            <label class="wr-input-label" title="The autyentication method for the incoming mail server">Authentication Type<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="进入邮件服务器的身份验证方法">身份认证类型<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>Wireless network encryption to use when connecting</span-->
             <div class="wr-input-control">
                 <select class="form-control">
-                    <option>Password</option>
+                    <option>密码</option>
                 </select>
             </div>
 
-            <label class="wr-input-label" title="The password for the incoming mail server">Password<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
+            <label class="wr-input-label" title="进入邮件服务器的密码">密码<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></label>
             <!--span>The Username used to connect to the server for incoming mail</span-->
             <div class="wr-input-control">
-                <input type="text" value="" placeholder="input text"/>
+                <input type="text" value="" placeholder="输入文本"/>
             </div>
 
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" checked />
-                    <span class="helper" title="Retrieve incoming mail through secure socket layer">Use SSL<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="通过安全套接字层检索传入邮件">使用 SSL<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
                 <!--span>Enable if target network is not open or broadcasting</span-->
             </div>
@@ -315,51 +315,51 @@
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="allowCamera" data-key="allowCamera" checked />
-                    <span class="helper" title="Allow Camera">Allow Camera<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="允许摄像头">允许摄像头<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
             </div>
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="allowCloudBackup" data-key="allowCloudBackup" checked/>
-                    <span class="helper" title="Allow Cloud Backup">Allow Cloud Backup<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="允许云备份">允许云备份<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
             </div>
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="allowScreenShot" data-key="allowScreenShot" checked/>
-                    <span class="helper" title="Allow Screenshots">Allow Screenshots<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="允许截图">允许截图<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
             </div>
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="allowSafari" data-key="allowSafari" checked />
-                    <span class="helper" title="Allow Safari Browser">Allow Safari Browser<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="允许Safari浏览器">允许Safari浏览器<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
             </div>
             <div class="wr-input-control">
                 <label class="wr-input-control checkbox">
                     <input type="checkbox" class="operationDataKeys" id="allowAirDrop" data-key="allowAirDrop" checked />
-                    <span class="helper" title="Allow AirDrop">Allow AirDrop<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
+                    <span class="helper" title="允许 AirDrop">允许 AirDrop<span class="wr-help-tip glyphicon glyphicon-question-sign"></span></span>
                 </label>
             </div>
-            <a href="javascript:runOperation('{{features.RESTRICTION.code}}')" class="btn-operations">Configure</a>
+            <a href="javascript:runOperation('{{features.RESTRICTION.code}}')" class="btn-operations">配置</a>
         </div>
         <!-- /general -->
         <!-- air play -->
         <div class="wr-hidden-operation panel-body operation-data" data-operation="{{features.AIR_PLAY.code}}">
-            <label class="wr-input-label col-sm-4" for="airPlayLocation">Location</label>
+            <label class="wr-input-label col-sm-4" for="airPlayLocation">位置</label>
             <div class="wr-input-control">
-                <input type="text" class="form-control operationDataKeys" id="airPlayLocation" data-key="location" placeholder="Enter location" />
+                <input type="text" class="form-control operationDataKeys" id="airPlayLocation" data-key="location" placeholder="输入位置" />
             </div>
-            <label class="wr-input-label col-sm-4" for="airPlayDeviceName">Device Name</label>
+            <label class="wr-input-label col-sm-4" for="airPlayDeviceName">设备名称</label>
             <div class="wr-input-control">
-                <input type="text" class="form-control operationDataKeys" id="airPlayDeviceName" data-key="deviceName" placeholder="Enter Device Name" />
+                <input type="text" class="form-control operationDataKeys" id="airPlayDeviceName" data-key="deviceName" placeholder="输入设备名称" />
             </div
-            <label class="wr-input-label col-sm-4" for="airPlayPassword">AirPlay password</label>
+            <label class="wr-input-label col-sm-4" for="airPlayPassword">AirPlay 密码</label>
             <div class="wr-input-control">
-                <input type="password" class="form-control operationDataKeys" id="airPlayPassword" data-key="password" placeholder="Password" />
+                <input type="password" class="form-control operationDataKeys" id="airPlayPassword" data-key="password" placeholder="密码" />
             </div>
-            <a href="javascript:runOperation('{{features.AIR_PLAY.code}}')" class="btn-operations">Configure</a>
+            <a href="javascript:runOperation('{{features.AIR_PLAY.code}}')" class="btn-operations">配置</a>
         </div>
         <!-- /air play -->
     </div>

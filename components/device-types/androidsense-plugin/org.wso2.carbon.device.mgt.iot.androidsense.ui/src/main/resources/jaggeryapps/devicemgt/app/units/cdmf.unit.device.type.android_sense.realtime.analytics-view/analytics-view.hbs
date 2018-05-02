@@ -37,9 +37,9 @@
                                     <div id="legend-{{this}}"></div>
                                 </div>
                                 <div id="chart-{{this}}" class="custom_rickshaw_graph"></div>
-                                <div class="custom_x_axis">Time</div>
+                                <div class="custom_x_axis">时间</div>
                             </div>
-                            <a class="details-view-toggle-button" data-toggle="tooltip" title="Stored Data"
+                            <a class="details-view-toggle-button" data-toggle="tooltip" title="存储数据"
                                href="{{@app.context}}/device/{{../../device.type}}/analytics?deviceId={{../../device.deviceIdentifier}}&deviceName={{../../device.name}}&graphType={{@key}}&sensor={{this}}">
                                 <span class="fw-stack">
                                    <i class="fw fw-circle-outline fw-stack-2x"></i>
@@ -60,7 +60,7 @@
 
 </div>
 <div class="hide" id="websocker-onerror">
-    Realtime Analytics is not available. Failed to connect to the websocket. Please make sure; '<a style="color: white" href="$webSocketURL">$webSocketURL</a>' is available and re-try again.
+   实时分析不可用， 无法连接到websocket。 请确定  '<a style="color: white" href="$webSocketURL"> $ webSocketURL </a>'可用，然后重新尝试。
 </div>
 
 {{#zone "bottomJs"}}
