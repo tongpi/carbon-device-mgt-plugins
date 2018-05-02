@@ -275,6 +275,17 @@ public class AgentManager {
     }
 
     public String getAgentStatus() {
+		//Fire alarm simulator, connection state localization.---start 20180424
+		if("Not-Registered".equals(agentStatus)){
+			agentStatus = "未注册";
+		}
+		if("Subscribed to MQTT Queue".equals(agentStatus)){
+			agentStatus = "订阅 MQTT 队列";
+		}
+		if("Connected to MQTT Queue".equals(agentStatus)){
+			agentStatus = "连接到 MQTT 队列";
+		}
+		//---end 20180424
         return agentStatus;
     }
 

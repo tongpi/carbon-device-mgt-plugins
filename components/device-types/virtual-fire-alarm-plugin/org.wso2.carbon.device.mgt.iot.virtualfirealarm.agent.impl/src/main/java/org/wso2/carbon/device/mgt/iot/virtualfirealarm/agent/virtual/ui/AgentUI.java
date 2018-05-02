@@ -184,25 +184,25 @@ public class AgentUI extends JFrame {
         jLabel1 = new JLabel();
 
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Fire Alarm Emulator");
+        setTitle("火灾报警模拟器");
         setResizable(false);
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         setLocation(dim.width / 2 - 650 / 2, dim.height / 2 - 440 / 2);
 
         lblAgentName.setFont(new Font("Cantarell", 1, 24)); // NOI18N
         lblAgentName.setHorizontalAlignment(SwingConstants.LEFT);
-        lblAgentName.setText("Device Name: " + AgentManager.getInstance().getDeviceName());
+        lblAgentName.setText("设备名称： " + AgentManager.getInstance().getDeviceName());
 
         Calendar now = Calendar.getInstance();
         int currentYear = now.get(Calendar.YEAR);
         jLabel2.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel2.setText("Copyright (c) " + currentYear + ", WSO2 Inc.");
+        jLabel2.setText("西安长城数字软件有限公司");
 
         jPanel1.setBackground(new Color(220, 220, 220));
 
         jLabel3.setFont(new Font("Cantarell", 0, 18)); // NOI18N
         jLabel3.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel3.setText("Alarm Status");
+        jLabel3.setText("告警状态");
 
         pnlBulbStatus.setBackground(new Color(220, 220, 220));
 
@@ -242,9 +242,9 @@ public class AgentUI extends JFrame {
 
         jLabel4.setFont(new Font("Cantarell", 0, 18)); // NOI18N
         jLabel4.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel4.setText("Temperature");
+        jLabel4.setText("温度");
 
-        chkbxTemperatureRandom.setText("Randomize Data");
+        chkbxTemperatureRandom.setText("随机数据");
         chkbxTemperatureRandom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chkbxTemperatureRandomActionPerformed(evt);
@@ -256,7 +256,7 @@ public class AgentUI extends JFrame {
         jPanel7.setBackground(new Color(220, 220, 220));
 
         jLabel5.setHorizontalAlignment(SwingConstants.LEFT);
-        jLabel5.setText("Min");
+        jLabel5.setText("最小值");
 
         txtTemperatureMin.setHorizontalAlignment(JTextField.CENTER);
         txtTemperatureMin.setText("20");
@@ -268,7 +268,7 @@ public class AgentUI extends JFrame {
         });
 
         jLabel6.setHorizontalAlignment(SwingConstants.RIGHT);
-        jLabel6.setText("Max");
+        jLabel6.setText("最大值");
 
         txtTemperatureMax.setHorizontalAlignment(JTextField.CENTER);
         txtTemperatureMax.setText("50");
@@ -331,7 +331,7 @@ public class AgentUI extends JFrame {
             }
         });
 
-        chkbxTemperatureSmooth.setText("Smooth Variation");
+        chkbxTemperatureSmooth.setText("平缓变化");
         chkbxTemperatureSmooth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chkbxTemperatureSmoothActionPerformed(evt);
@@ -382,11 +382,11 @@ public class AgentUI extends JFrame {
 
         jPanel6.setBackground(new Color(253, 254, 209));
 
-        jLabel20.setText("Connection Status:");
+        jLabel20.setText("连接状态：");
         jLabel20.setVerticalTextPosition(SwingConstants.TOP);
 
         lblStatus.setFont(new Font("Cantarell", 1, 15)); // NOI18N
-        lblStatus.setText("Not Connected");
+        lblStatus.setText("未连接");
 
         GroupLayout jPanel6Layout = new GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -415,9 +415,9 @@ public class AgentUI extends JFrame {
 
         jLabel23.setFont(new Font("Cantarell", 0, 18)); // NOI18N
         jLabel23.setHorizontalAlignment(SwingConstants.CENTER);
-        jLabel23.setText("Humidity");
+        jLabel23.setText("湿度");
 
-        chkbxHumidityRandom.setText("Randomize Data");
+        chkbxHumidityRandom.setText("随机数据");
         chkbxHumidityRandom.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chkbxHumidityRandomActionPerformed(evt);
@@ -429,7 +429,7 @@ public class AgentUI extends JFrame {
         jPanel9.setBackground(new Color(220, 220, 220));
 
         jLabel24.setHorizontalAlignment(SwingConstants.LEFT);
-        jLabel24.setText("Min");
+        jLabel24.setText("最小值");
 
         txtHumidityMin.setHorizontalAlignment(JTextField.CENTER);
         txtHumidityMin.setText("20");
@@ -441,7 +441,7 @@ public class AgentUI extends JFrame {
         });
 
         jLabel25.setHorizontalAlignment(SwingConstants.RIGHT);
-        jLabel25.setText("Max");
+        jLabel25.setText("最大值");
 
         txtHumidityMax.setHorizontalAlignment(JTextField.CENTER);
         txtHumidityMax.setText("50");
@@ -506,7 +506,7 @@ public class AgentUI extends JFrame {
             }
         });
 
-        chkbxHumiditySmooth.setText("Smooth Variation");
+        chkbxHumiditySmooth.setText("平缓变化");
         chkbxHumiditySmooth.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chkbxHumiditySmoothActionPerformed(evt);
@@ -556,7 +556,7 @@ public class AgentUI extends JFrame {
 
         jPanel3.setBackground(new Color(207, 233, 234));
 
-        jLabel7.setText("Data Push Interval:");
+        jLabel7.setText("数据推送间隔：");
 
         spinnerInterval.setModel(new SpinnerNumberModel(Integer.valueOf(AgentManager.getInstance().getPushInterval()), Integer.valueOf(1), null, Integer.valueOf(1)));
         spinnerInterval.addChangeListener(new javax.swing.event.ChangeListener() {
@@ -565,9 +565,9 @@ public class AgentUI extends JFrame {
             }
         });
 
-        jLabel8.setText("Seconds");
+        jLabel8.setText("秒");
 
-        jLabel9.setText("Protocol:");
+        jLabel9.setText("协议：");
 
         cmbProtocol.setModel(new DefaultComboBoxModel(new String[] { "MQTT", "XMPP", "HTTP" }));
         cmbProtocol.addActionListener(new java.awt.event.ActionListener() {
@@ -576,7 +576,7 @@ public class AgentUI extends JFrame {
             }
         });
 
-        jLabel12.setText("Interface:");
+        jLabel12.setText("接口：");
 
         cmbInterface.setModel(new DefaultComboBoxModel(new String[] { "eth0" }));
         cmbInterface.addActionListener(new java.awt.event.ActionListener() {
@@ -625,21 +625,21 @@ public class AgentUI extends JFrame {
 
         jPanel4.setBackground(new Color(169, 253, 173));
 
-        chkbxEmulate.setText("Emulate data");
+        chkbxEmulate.setText("模拟数据");
         chkbxEmulate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 chkbxEmulateActionPerformed(evt);
             }
         });
 
-        cmbPeriod.setModel(new DefaultComboBoxModel(new String[] { "1 hour", "1 day", "1 week", "1 month " }));
+        cmbPeriod.setModel(new DefaultComboBoxModel(new String[] { "1 小时", "1 天", "1 周", "1 月 " }));
         cmbPeriod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cmbPeriodActionPerformed(evt);
             }
         });
 
-        jLabel1.setText("Emulation Period");
+        jLabel1.setText("仿真周期");
 
         GroupLayout jPanel4Layout = new GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
