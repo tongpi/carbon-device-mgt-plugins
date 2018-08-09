@@ -79,69 +79,69 @@
 
     <Features>
         <Feature code="DISENROLL">
-            <Name>Disenroll</Name>
-            <Description>Dis-enrol the device</Description>
+            <Name>取消注册设备</Name>
+            <Description>取消注册设备</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/disenroll-devices" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="WIPE_DATA">
-            <Name>Wipe Data</Name>
-            <Description>Wipe the device</Description>
+            <Name>清除数据</Name>
+            <Description>清除数据</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/wipe-devices" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_RING">
-            <Name>Ring</Name>
-            <Description>Ring the device</Description>
+            <Name>拨打电话</Name>
+            <Description>拨打电话</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/ring-devices" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_LOCK">
-            <Name>Device Lock</Name>
-            <Description>Lock the device</Description>
+            <Name>设备锁</Name>
+            <Description>锁定设备</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/lock-devices" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="LOCK_RESET">
-            <Name>Device Lock Reset</Name>
-            <Description>Lock Reset the device</Description>
+            <Name>设备锁重置</Name>
+            <Description>锁定设备重置</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/lock-reset-devices" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_LOCATION">
-            <Name>Location</Name>
-            <Description>Request coordinates of device location</Description>
+            <Name>位置</Name>
+            <Description>请求设备位置的坐标</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/location" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_REBOOT">
-            <Name>Reboot</Name>
-            <Description>Reboot the device</Description>
+            <Name>重启</Name>
+            <Description>重启设备</Description>
             <Operation context="/api/device-mgt/windows/v1.0/admin/devices/reboot" method="POST"
                        type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_INFO">
-            <Name>Device info</Name>
-            <Description>Request device information</Description>
+            <Name>设备信息</Name>
+            <Description>请求设备信息</Description>
         </Feature>
         <Feature code="PASSCODE_POLICY">
-            <Name>Password Policy</Name>
-            <Description>Set passcode policy</Description>
+            <Name>密码策略</Name>
+            <Description>设置密码策略</Description>
         </Feature>
         <Feature code="CAMERA">
-            <Name>Camera Enable/Disable</Name>
-            <Description>Enable/Disable camera</Description>
+            <Name>照相机启用/禁用</Name>
+            <Description>启用/禁用照相机</Description>
         </Feature>
         <Feature code="ENCRYPT_STORAGE">
-            <Name>Encrypt Storage</Name>
-            <Description>Encrypt the device storage</Description>
+            <Name>加密存储</Name>
+            <Description>加密设备存储</Description>
         </Feature>
     </Features>
     <TaskConfiguration>
