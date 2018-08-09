@@ -20,8 +20,8 @@
 <DeviceTypeConfiguration name="android_sense">
     <Features>
         <Feature code="keywords">
-            <Name>Add Keywords</Name>
-            <Description>Send keywords to the device</Description>
+            <Name>添加关键字</Name>
+            <Description>向设备发送关键字</Description>
             <!--<Operation context="/android_sense/device/{deviceId}/words" method="POST">-->
                 <!--<QueryParameters>-->
                     <!--<Parameter>keywords</Parameter>-->
@@ -29,8 +29,8 @@
             <!--</Operation>-->
         </Feature>
         <Feature code="threshold">
-            <Name>Add Threshold</Name>
-            <Description>Send Threshold to the device</Description>
+            <Name>添加阈值</Name>
+            <Description>向设备发送阈值</Description>
             <!--<Operation context="/android_sense/device/{deviceId}/words/threshold" method="POST">-->
                 <!--<QueryParameters>-->
                     <!--<Parameter>threshold</Parameter>-->
@@ -38,8 +38,8 @@
             <!--</Operation>-->
         </Feature>
         <Feature code="remove_words">
-            <Name>Remove words</Name>
-            <Description>Remove Threshold from the device</Description>
+            <Name>移除词语</Name>
+            <Description>从设备中删除词语</Description>
             <!--<Operation context="/android_sense/device/{deviceId}/words" method="DELETE">-->
                 <!--<QueryParameters>-->
                     <!--<Parameter>words</Parameter>-->
