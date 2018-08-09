@@ -88,260 +88,260 @@
 
     <Features>
         <Feature code="DEVICE_RING">
-            <Name>Ring</Name>
-            <Description>Ring the device</Description>
+            <Name>拨打电话</Name>
+            <Description>拨打电话</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/ring" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_LOCK">
-            <Name>Device Lock</Name>
-            <Description>Lock the device</Description>
+            <Name>设备锁</Name>
+            <Description>设备锁</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/lock-devices" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_LOCATION">
-            <Name>Location</Name>
-            <Description>Request coordinates of device location</Description>
+            <Name>位置</Name>
+            <Description>设备位置的请求坐标</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/location" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="CLEAR_PASSWORD">
-            <Name>Clear Password</Name>
-            <Description>Clear current password (This functionality is only working with profile owners from Android 7.0 API 24 onwards.)</Description>
+            <Name>清除密码</Name>
+            <Description>清除当前密码(此功能仅用于从Android7.0API 24开始的配置文件所有者)。</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/clear-password" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_REBOOT">
-            <Name>Reboot</Name>
-            <Description>Reboot the device</Description>
+            <Name>重启</Name>
+            <Description>重启设备</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/reboot" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="UPGRADE_FIRMWARE">
-            <Name>Upgrade Firmware</Name>
-            <Description>Upgrade Firmware</Description>
+            <Name>升级固件</Name>
+            <Description>升级固件</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/upgrade-firmware" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="DEVICE_MUTE">
-            <Name>Mute</Name>
-            <Description>Enable mute in the device</Description>
+            <Name>静音</Name>
+            <Description>启用设备静音</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/mute" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="NOTIFICATION">
-            <Name>Message</Name>
-            <Description>Send message</Description>
+            <Name>短信</Name>
+            <Description>发送短信</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/send-notification" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="CHANGE_LOCK_CODE">
-            <Name>Change Lock-code</Name>
-            <Description>Change current lock code (This functionality is only working with profile owners from Android 7.0 API 24 onwards.)</Description>
+            <Name>更改锁码</Name>
+            <Description>更改当前锁码（此功能仅适用于Android 7.0 API 24以后的配置文件所有者。）</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/change-lock-code" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="FILE_TRANSFER">
-            <Name>File Transfer</Name>
-            <Description>Transfer file to the device</Description>
+            <Name>文件传输</Name>
+            <Description>传输文件到设备</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/file-transfer" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="ENTERPRISE_WIPE">
-            <Name>Enterprise Wipe</Name>
-            <Description>Remove enterprise applications</Description>
+            <Name>企业擦除</Name>
+            <Description>删除企业应用程序</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/enterprise-wipe" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="WIPE_DATA">
-            <Name>Wipe Data</Name>
-            <Description>Factory reset the device</Description>
+            <Name>清除数据</Name>
+            <Description>恢复出厂设置</Description>
             <Operation context="/api/device-mgt/android/v1.0/admin/devices/wipe" method="POST" type="application/json">
             </Operation>
         </Feature>
         <Feature code="WIFI">
             <Name>Wifi</Name>
-            <Description>Setting up wifi configuration</Description>
+            <Description>设置 wifi 配置</Description>
         </Feature>
         <Feature code="CAMERA">
-            <Name>Camera</Name>
-            <Description>Enable or disable camera</Description>
+            <Name>相机</Name>
+            <Description>启用或禁用照相机</Description>
         </Feature>
         <Feature code="EMAIL">
-            <Name>Email</Name>
-            <Description>Configure email settings</Description>
+            <Name>电子邮件</Name>
+            <Description>配置电子邮件设置</Description>
         </Feature>
         <Feature code="DEVICE_INFO">
-            <Name>Device info</Name>
-            <Description>Request device information</Description>
+            <Name>设备信息</Name>
+            <Description>请求设备信息</Description>
         </Feature>
         <Feature code="APPLICATION_LIST">
-            <Name>Application List</Name>
-            <Description>Request list of current installed applications</Description>
+            <Name>应用程序列表</Name>
+            <Description>请求当前已安装应用程序列表</Description>
         </Feature>
         <Feature code="INSTALL_APPLICATION">
-            <Name>Install App</Name>
-            <Description>Install App</Description>
+            <Name>安装应用程序</Name>
+            <Description>安装应用程序</Description>
         </Feature>
         <Feature code="UNINSTALL_APPLICATION">
-            <Name>Uninstall App</Name>
-            <Description>Uninstall App</Description>
+            <Name>卸载应用程序</Name>
+            <Description>卸载应用程序</Description>
         </Feature>
         <Feature code="BLACKLIST_APPLICATIONS">
-            <Name>Blacklist app</Name>
-            <Description>Blacklist applications</Description>
+            <Name>黑名单应用程序</Name>
+            <Description>黑名单应用程序</Description>
         </Feature>
         <Feature code="ENCRYPT_STORAGE">
-            <Name>Encrypt Storage</Name>
-            <Description>Encrypt storage</Description>
+            <Name>加密存储</Name>
+            <Description>加密存储</Description>
         </Feature>
         <Feature code="PASSCODE_POLICY">
-            <Name>Password Policy</Name>
-            <Description>Set passcode policy</Description>
+            <Name>密码策略</Name>
+            <Description>设置密码策略</Description>
         </Feature>
         <Feature code="VPN">
-            <Name>Configure VPN</Name>
-            <Description>Configure VPN settings</Description>
+            <Name>VPN 配置</Name>
+            <Description>设置 VPN 配置</Description>
         </Feature>
         <Feature code="DISALLOW_ADJUST_VOLUME">
-            <Name>Disallow user to change volume</Name>
-            <Description>Allow or disallow user to change volume"</Description>
+            <Name>不允许用户更改卷</Name>
+            <Description>允许或不允许用户更改卷</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_BLUETOOTH">
-            <Name>Disallow bluetooth configuration</Name>
-            <Description>Allow or disallow bluetooth configuration</Description>
+            <Name>不允许蓝牙配置</Name>
+            <Description>允许或不允许蓝牙配置</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_CELL_BROADCASTS">
-            <Name>Disallow user to change cell broadcast configurations</Name>
-            <Description>Allow or disallow user to change cell broadcast configurations</Description>
+            <Name>不允许用户更改单元广播配置</Name>
+            <Description>允许或不允许用户更改单元格广播配置</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_CREDENTIALS">
-            <Name>Disallow user to change user credentials</Name>
-            <Description>Allow or disallow user to change user credentials</Description>
+            <Name>不允许用户更改用户凭据</Name>
+            <Description>允许或不允许用户更改用户凭据</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_MOBILE_NETWORKS">
-            <Name>Disallow user to change mobile networks configurations</Name>
-            <Description>Allow or disallow user to change mobile networks configurations</Description>
+            <Name>不允许用户更改移动网络配置</Name>
+            <Description>允许或不允许用户更改移动网络配置</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_TETHERING">
-            <Name>Disallow user to change tethering configurations</Name>
-            <Description>Allow or disallow user to change tethering configurations</Description>
+            <Name>禁止用户更改绑定配置</Name>
+            <Description>允许或不允许用户更改绑定配置</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_VPN">
-            <Name>Disallow user to change VPN configurations</Name>
-            <Description>Allow or disallow user to change VPN configurations</Description>
+            <Name>不允许用户更改VPN配置</Name>
+            <Description>允许或不允许用户更改VPN配置</Description>
         </Feature>
         <Feature code="DISALLOW_CONFIG_WIFI">
-            <Name>Disallow user to change WIFI configurations</Name>
-            <Description>Allow or disallow user to change WIFI configurations</Description>
+            <Name>不允许用户更改wifi配置</Name>
+            <Description>允许或不允许用户更改wifi配置</Description>
         </Feature>
         <Feature code="DISALLOW_APPS_CONTROL">
-            <Name>Disallow user to change app control</Name>
-            <Description>Allow or disallow user to change app control</Description>
+            <Name>不允许用户更改应用程序控件</Name>
+            <Description>允许或不允许用户更改应用程序控件</Description>
         </Feature>
         <Feature code="DISALLOW_CREATE_WINDOWS">
-            <Name>Disallow window creation</Name>
-            <Description>Allow or disallow window creation</Description>
+            <Name>不允许窗口创建</Name>
+            <Description>允许或不允许创建窗口</Description>
         </Feature>
         <Feature code="DISALLOW_APPS_CONTROL">
-            <Name>Disallow user to change app control configurations</Name>
-            <Description>Allow or disallow user to change app control configurations</Description>
+            <Name>不允许用户更改应用程序控制配置</Name>
+            <Description>允许或不允许用户更改应用程序控件配置</Description>
         </Feature>
         <Feature code="DISALLOW_CROSS_PROFILE_COPY_PASTE">
-            <Name>Disallow cross profile copy paste</Name>
-            <Description>Allow or disallow cross profile copy paste</Description>
+            <Name>不允许交叉剖面复制粘贴</Name>
+            <Description>允许或不允许交叉配置文件复制粘贴</Description>
         </Feature>
         <Feature code="DISALLOW_DEBUGGING_FEATURES">
-            <Name>Disallow debugging features</Name>
-            <Description>Allow or disallow debugging features</Description>
+            <Name>不允许调试特性</Name>
+            <Description>允许或不允许调试功能</Description>
         </Feature>
         <Feature code="DISALLOW_FACTORY_RESET">
-            <Name>Disallow factory reset</Name>
-            <Description>Allow or disallow factory reset</Description>
+            <Name>不允许恢复出厂设置</Name>
+            <Description>允许或不允许恢复出厂设置</Description>
         </Feature>
         <Feature code="DISALLOW_ADD_USER">
-            <Name>Disallow add user</Name>
-            <Description>Allow or disallow add user</Description>
+            <Name>不允许添加用户</Name>
+            <Description>允许或不允许添加用户</Description>
         </Feature>
         <Feature code="DISALLOW_INSTALL_APPS">
-            <Name>Disallow install apps</Name>
-            <Description>Allow or disallow install apps</Description>
+            <Name>不允许安装应用程序</Name>
+            <Description>允许或不允许安装应用程序</Description>
         </Feature>
         <Feature code="DISALLOW_INSTALL_UNKNOWN_SOURCES">
-            <Name>Disallow install unknown sources</Name>
-            <Description>Allow or disallow install unknown sources</Description>
+            <Name>不允许安装未知源</Name>
+            <Description>允许或不允许安装未知源</Description>
         </Feature>
         <Feature code="DISALLOW_MODIFY_ACCOUNTS">
-            <Name>Disallow modify account</Name>
-            <Description>Allow or disallow modify account</Description>
+            <Name>不允许修改帐户</Name>
+            <Description>允许或不允许修改帐户</Description>
         </Feature>
         <Feature code="DISALLOW_MOUNT_PHYSICAL_MEDIA">
-            <Name>Disallow mount physical media</Name>
-            <Description>Allow or disallow mount physical media</Description>
+            <Name>不允许装入物理媒体</Name>
+            <Description>允许或不允许装入物理媒体</Description>
         </Feature>
         <Feature code="DISALLOW_NETWORK_RESET">
-            <Name>Disallow network reset</Name>
-            <Description>Allow or disallow network reset</Description>
+            <Name>不允许网络重置</Name>
+            <Description>允许或不允许网络重置</Description>
         </Feature>
         <Feature code="DISALLOW_OUTGOING_BEAM">
-            <Name>Disallow outgoing beam</Name>
-            <Description>Allow or disallow outgoing beam</Description>
+            <Name>禁止输出光束</Name>
+            <Description>允许或禁止输出光束</Description>
         </Feature>
         <Feature code="DISALLOW_OUTGOING_CALLS">
-            <Name>Disallow outgoing calls</Name>
-            <Description>Allow or disallow outgoing calls</Description>
+            <Name>禁止拨打电话</Name>
+            <Description>允许或禁止拨打电话</Description>
         </Feature>
         <Feature code="DISALLOW_REMOVE_USER">
-            <Name>Disallow remove users</Name>
-            <Description>Allow or disallow remove users</Description>
+            <Name>禁止删除用户</Name>
+            <Description>允许或禁止删除用户</Description>
         </Feature>
         <Feature code="DISALLOW_SAFE_BOOT">
-            <Name>Disallow safe boot</Name>
-            <Description>Allow or disallow safe boot</Description>
+            <Name>禁止安全启动</Name>
+            <Description>允许或禁止安全启动</Description>
         </Feature>
         <Feature code="DISALLOW_SHARE_LOCATION">
-            <Name>Disallow share location</Name>
-            <Description>Allow or disallow share location</Description>
+            <Name>禁止共享位置</Name>
+            <Description>允许或禁止共享位置</Description>
         </Feature>
         <Feature code="DISALLOW_SMS">
-            <Name>Disallow sms</Name>
-            <Description>Allow or disallow sms</Description>
+            <Name>禁止短信</Name>
+            <Description>允许或禁止短信</Description>
         </Feature>
         <Feature code="DISALLOW_UNINSTALL_APPS">
-            <Name>Disallow uninstall app</Name>
-            <Description>Allow or disallow uninstall app</Description>
+            <Name>禁止卸载应用</Name>
+            <Description>允许或禁止卸载应用</Description>
         </Feature>
         <Feature code="DISALLOW_UNMUTE_MICROPHONE">
-            <Name>Disallow unmute mic</Name>
-            <Description>Allow or disallow unmute mic</Description>
+            <Name>禁止取消静音麦克风</Name>
+            <Description>允许或禁止取消静音麦克风</Description>
         </Feature>
         <Feature code="DISALLOW_USB_FILE_TRANSFER">
-            <Name>Disallow usb file transfer</Name>
-            <Description>Allow or disallow usb file transfer</Description>
+            <Name>禁止usb文件传输</Name>
+            <Description>允许或禁止usb文件传输</Description>
         </Feature>
         <Feature code="ALLOW_PARENT_PROFILE_APP_LINKING">
-            <Name>Disallow parent profile app linking</Name>
-            <Description>Allow or disallow parent profile app linking</Description>
+            <Name>禁止父配置文件应用链接</Name>
+            <Description>允许或禁止父配置文件应用程序链接</Description>
         </Feature>
         <Feature code="ENSURE_VERIFY_APPS">
-            <Name>Disallow ensure verify apps</Name>
-            <Description>Allow or disallow ensure verify apps</Description>
+            <Name>不允许确认验证应用程序</Name>
+            <Description>允许或禁止确认验证应用程序</Description>
         </Feature>
         <Feature code="AUTO_TIME">
-            <Name>Disallow auto timing</Name>
-            <Description>Allow or disallow auto timing</Description>
+            <Name>不允许自动定时</Name>
+            <Description>允许或不允许自动定时</Description>
         </Feature>
         <Feature code="REMOVE_DEVICE_OWNER">
-            <Name>Remove device owner</Name>
-            <Description>Remove device owner</Description>
+            <Name>移除设备所有者</Name>
+            <Description>移除设备所有者</Description>
         </Feature>
         <Feature code="LOGCAT">
-            <Name>Fetch device logcat</Name>
-            <Description>Fetch device logcat</Description>
+            <Name>获取设备日志</Name>
+            <Description>获取设备日志</Description>
         </Feature>
         <Feature code="DEVICE_UNLOCK">
-            <Name>Unlock the device</Name>
-            <Description>Unlock the device</Description>
+            <Name>解锁设备</Name>
+            <Description>解锁设备</Description>
         </Feature>
     </Features>
     <TaskConfiguration>

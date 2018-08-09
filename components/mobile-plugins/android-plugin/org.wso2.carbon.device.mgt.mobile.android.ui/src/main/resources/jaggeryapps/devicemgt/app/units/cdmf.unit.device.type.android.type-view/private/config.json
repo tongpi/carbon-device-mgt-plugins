@@ -49,12 +49,12 @@
                         "type": "text",
                         "id": "lock-message",
                         "optional": true,
-                        "label": "Message to be sent to the device"
+                        "label": "发送到设备的消息"
                     },{
                         "type": "checkbox",
                         "id": "hard-lock",
                         "optional": true,
-                        "label": "Hard lock enabled"
+                        "label": "启用硬锁"
                     }
                 ],
                 "permission": "/device-mgt/devices/owning-device/operations/android/lock"
@@ -69,31 +69,31 @@
             },
             "DEVICE_REBOOT": {
                 "icon": "fw-refresh",
-                "filter" : {"property" : "ownership", "value" : "COPE", "text": "This feature is only available in COPE/COSU"},
+                "filter" : {"property" : "ownership", "value" : "COPE", "text": "此功能仅适用于COPE / COSU"},
                 "permission": "/device-mgt/devices/owning-device/operations/android/reboot"
             },
             "UPGRADE_FIRMWARE": {
                 "icon": "fw-hardware",
-                "filter" : {"property" : "ownership", "value" : "COPE", "text": "This feature is only available in COPE/COSU"},
+                "filter" : {"property" : "ownership", "value" : "COPE", "text": "此功能仅适用于COPE / COSU"},
                 "formParams": [
                     {
                         "type": "checkbox",
                         "id": "immediate",
                         "optional": true,
-                        "label": "Instant Upgrade",
-                        "helper": "Once enabled, device firmware upgrade process will start instantly."
+                        "label": "即时升级",
+                        "helper": "启用后，设备固件升级过程将立即启动。"
                     },
                     {
                         "type": "text",
                         "id": "schedule",
                         "optional": false,
-                        "label": "Enter the date and time to schedule firmware upgrade."
+                        "label": "输入安排固件升级的日期和时间。"
                     },
                     {
                         "type": "text",
                         "id": "server",
                         "optional": true,
-                        "label": "Enter firmware upgrade server URL (ie. http://abc.com or http://abc.com/ota)"
+                        "label": "输入固件升级服务器URL（即http://abc.com或http://abc.com/ota）"
                     }
                 ],
                 "permission": "/device-mgt/devices/owning-device/operations/android/upgrade"
@@ -109,13 +109,13 @@
                         "type": "text",
                         "id": "messageTitle",
                         "optional": false,
-                        "label": "Title Here..."
+                        "label": "标题在这里......"
                     },
                     {
                         "type": "text",
                         "id": "messageText",
                         "optional": false,
-                        "label": "Message Here..."
+                        "label": "留言......"
                     }
                 ],
                 "permission": "/device-mgt/devices/owning-device/operations/android/send-notification"
@@ -127,7 +127,7 @@
                         "type": "text",
                         "id": "lockCode",
                         "optional": false,
-                        "label": "Lock Code"
+                        "label": "密码"
                     }
                 ],
                 "permission": "/device-mgt/devices/owning-device/operations/android/change-lock-code"
@@ -144,14 +144,14 @@
                         "name": "directionSelection",
                         "id": "upload",
                         "optional": false,
-                        "value": "To device"
+                        "value": "到设备"
                     },
                     {
                         "type": "radio",
                         "name": "directionSelection",
                         "id": "download",
                         "optional": false,
-                        "value": "From device"
+                        "value": "从设备"
                     },
                     {
                         "type": "select",
@@ -161,43 +161,43 @@
                         "valueOne": "HTTP",
                         "valueTwo": "FTP",
                         "valueThree": "SFTP",
-                        "label": "Protocol"
+                        "label": "协议"
                     },
                     {
                         "type": "text",
                         "id": "fileURL",
                         "optional": false,
-                        "label": "URL to upload file from device"
+                        "label": "从设备上传文件的URL"
                     },
                     {
                         "type": "text",
                         "id": "fileLocation",
                         "optional": false,
-                        "label": "File location in the device"
+                        "label": "文件在设备中的位置"
                     },
                     {
                         "type": "info",
                         "id": "defaultFileLocation",
                         "optional": false,
-                        "value": "File will be saved in Default download directory if not specified."
+                        "value": "如果未指定，文件将保存在默认下载目录中。"
                     },
                     {
                         "type": "checkbox",
                         "id": "authentication",
                         "optional": true,
-                        "label": "Authentication required"
+                        "label": "需要验证"
                     },
                     {
                         "type": "text",
                         "id": "userName",
                         "optional": false,
-                        "label": "User Name"
+                        "label": "用户名"
                     },
                     {
                         "type": "password",
                         "id": "ftpPassword",
                         "optional": false,
-                        "label": "Password (Ignore if not needed)"
+                        "label": "密码（如果不需要，则忽略）"
                     }
                 ],
                 "permission": "/device-mgt/devices/owning-device/operations/android/file-transfer"
@@ -209,7 +209,7 @@
                         "type": "text",
                         "id": "pin",
                         "optional": false,
-                        "label": "Enter PIN code* of the device."
+                        "label": "输入设备的PIN码*。"
                     }
                 ],
                 "permission": "/device-mgt/devices/owning-device/operations/android/wipe"
